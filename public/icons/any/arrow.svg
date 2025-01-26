@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+	<title>iconmonstr-arrow-right-lined-48</title>
+	<defs>
+		<image  width="36" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAAAXNSR0IB2cksfwAAAEJQTFRFAAAABQUFAQEBBAQEAgICAAAAAQEBBQUFBQUFAQEBBQUFBAQEAwMDAwMDAwMDAQEBAQEBBQUFAgICAgICBQUFAgICmaO8IAAAABZ0Uk5TACrlNHz/7zQo7TIyfoOz4+EmfrEwelXHoQoAAACfSURBVHicjdPdCsIwDAXgHulwrOD0Yu//gl6IoxPR/XSbbgk0R3NX+DgJaQuXKcChl+cc8gnh+QOVeKeoniNXjUrl0aqKyNGi/CFypJSJpLKRUATtiqFNUfRVKD1zeMyXhLqjWXMFnOMf6NKeWLt7ahf44GFIg4crRR9DV7AYdHSZmyFoNzYSxkTSWEgZA2ljfylh8qi5KWMkHd1LPo4JNqlHW0R3EG0AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="6" y="10"/>
+</svg>

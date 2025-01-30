@@ -1,20 +1,15 @@
 import Nav from "./Nav/Nav.tsx";
-// import img from "/icons/any/MP-logo.svg";
-import "../../style/header.css";
 import { Link } from "react-router-dom";
 
-function Header() {
+const Header = () => {
   return (
-    <>
-      <header className="flex items-center w-screen">
-        {/* <img src={img} alt="Moje logo `MP`(Michal Pawłowski)" /> */}
-        <Link to="/" className="w-1/2">
-          <h1 className="m-2 text-xl uppercase justify-start"></h1>
-        </Link>
-        <Nav />
-      </header>
-    </>
+    <header className="flex items-center justify-between w-full p-4 ">
+      <Link to="/" className="flex items-center">
+        <h1 className="text-2xl text-white uppercase"></h1>
+      </Link>
+      <Nav />
+    </header>
   );
-}
+};
 
 export default Header;

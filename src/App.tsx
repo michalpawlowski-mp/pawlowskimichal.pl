@@ -6,8 +6,9 @@ import Contact from "./components/Contact/Contact.tsx";
 import Portfolio from "./components/Portfolio/Portfolio.tsx";
 import CurriculumVitae from "./components/CurriculumVitae/CurriculumVitae.tsx";
 import Footer from "./components/Footer/Footer.tsx";
+import "./style/style.css";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Header />
@@ -21,6 +22,6 @@ function App() {
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;

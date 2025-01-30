@@ -1,4 +1,4 @@
-function CV() {
+const CV = () => {
   return (
     <>
       <iframe
@@ -8,6 +8,6 @@ function CV() {
       ></iframe>
     </>
   );
-}
+};
 
 export default CV;

@@ -20,8 +20,8 @@ const Description = () => {
       <div className="p-3">
         <p className="text-xl font-semibold mb-4">Cześć!</p>
         <p className="text-sm mb-4">
-          Nazywam się Michał Pawłowski, mam {age} lat i jestem pasjonatem programowania oraz technologii. Posiadam tytuł
-          Inżyniera Informatyki zdobyty na Uniwersytecie Kazimierza Wielkiego w Bydgoszczy, a także tytuł Technika
+          Nazywam się Michał Pawłowski, mam {age} lata i jestem pasjonatem programowania oraz technologii. Posiadam
+          tytuł Inżyniera Informatyki zdobyty na Uniwersytecie Kazimierza Wielkiego w Bydgoszczy, a także tytuł Technika
           Informatyka, który uzyskałem kończąc technikum w Zespole Szkół Mechanicznych nr 1 w Bydgoszczy.
         </p>
         <p className="text-sm mb-4">
@@ -39,7 +39,10 @@ const Description = () => {
         </p>
         <p className="text-sm">
           Jestem osobą zdeterminowaną, nastawioną na naukę i otwartą na nowe wyzwania. Jeśli poszukujesz młodego,
-          ambitnego programisty do swojego zespołu – zapraszam do kontaktu!
+          ambitnego programisty do swojego zespołu
+          <Link to="/contact" className="text-blue-500 ps-1 block">
+            – zapraszam do kontaktu!
+          </Link>
         </p>
       </div>
     </article>

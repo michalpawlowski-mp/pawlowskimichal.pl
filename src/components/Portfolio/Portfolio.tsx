@@ -29,6 +29,7 @@ const Portfolio = () => {
           <a
             className="bg-white/20 p-2 pe-4 m-4 rounded-3xl flex items-center"
             href="https://codepen.io/Michal-Pawlowski"
+            target="_blank"
           >
             <img className="me-3" src={codePen} alt="Link do mojego profilu na CodePen" />
             MP.Dev
@@ -36,6 +37,7 @@ const Portfolio = () => {
           <a
             className="bg-white/20 p-2 pe-4 m-4 rounded-3xl flex items-center"
             href="https://uiverse.io/profile/aJpaRmp"
+            target="_blank"
           >
             <img className="rounded-full me-3" src={uiverseIo} alt="Link do mojego profilu na Uuverse.io" />
             MP.Dev

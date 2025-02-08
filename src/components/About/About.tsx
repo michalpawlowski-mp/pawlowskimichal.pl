@@ -3,6 +3,7 @@ import Skills from "./Skills";
 import Description from "./Description";
 import Certificates from "./Certificates";
 import Carrier from "./Carrier";
+import Education from "./Education";
 import SocialMedia from "./SocialMedia";
 
 const About = () => {
@@ -15,7 +16,8 @@ const About = () => {
           <Description />
           <SocialMedia />
         </div>
-        <div className="flex w-full justify-center mt-4">
+        <div className="flex w-full justify-center my-3">
+          <Education />
           <Carrier />
           <Certificates />
         </div>

@@ -8,8 +8,6 @@ const Nav = () => {
   return (
     <nav className="flex">
       <ul className="flex gap-6 text-lg">
-        {" "}
-        {/* Dodano text-lg dla zwiększenia rozmiaru czcionki */}
         <li>
           <Link to="/" className="text-white hover:text-gray-400">
             Home

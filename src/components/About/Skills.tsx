@@ -5,14 +5,13 @@ const Skills = () => {
       <ul className="flex flex-wrap justify-center items-center">
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">HTML</li>
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">CSS</li>
-        <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">RWD</li>
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">SASS/SCSS</li>
+        <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">LESS</li>
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">JavaScript</li>
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">TypeScript</li>
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">React</li>
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">Tailwind</li>
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">Bootstrap</li>
-        <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">LESS</li>
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">jQuery</li>
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">DevTools</li>
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">Git</li>

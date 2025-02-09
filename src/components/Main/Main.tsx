@@ -1,4 +1,4 @@
-import CodeSection from "./codeSection";
+import CodeSection from "./CodeSection";
 import IntroSection from "./IntroSection";
 import ExampleProjectSection from "./ExampleProjectSection";
 import ContactSection from "./ContactSection";

@@ -4,8 +4,8 @@ import arrow from "/icons/any/arrow.svg";
 const ExampleProjectSection = () => {
   return (
     <>
-      <div className="flex flex-col text-center items-center border-2 w-max p-3 rounded-2xl border-white">
-        <h3>Wybrane projekty</h3>
+      <div className="flex flex-col text-center items-center w-max p-3">
+        <h3 className="text-4xl">Wybrane projekty</h3>
         <div className="flex">
           <div className="flex flex-col text-center items-center w-1/2">
             <h4>GamingHub</h4>

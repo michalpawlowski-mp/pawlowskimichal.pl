@@ -10,7 +10,7 @@ const Education = () => {
   return (
     <article id="carrier" className="flex flex-col items-center bg-gray-50/30 mx-2 mt-2 pt-2 rounded-3xl w-1/3">
       <h2 className="text-3xl mb-2">Wykształcenie</h2>
-      <button onClick={toggleVisibility} className="mb-4 p-2 bg-black/50 text-white rounded">
+      <button onClick={toggleVisibility} className="mb-4 py-2 px-5 bg-black/50 text-white rounded-full">
         Zobacz moje wykształcenie
       </button>
       {isVisible && (

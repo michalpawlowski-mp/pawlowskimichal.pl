@@ -16,7 +16,7 @@ const About = () => {
           <Description />
           <SocialMedia />
         </div>
-        <div className="flex w-full justify-center my-3">
+        <div className="flex w-full justify-center my-1">
           <Education />
           <Carrier />
           <Certificates />

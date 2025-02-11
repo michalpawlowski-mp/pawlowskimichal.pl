@@ -1,21 +1,35 @@
 import { Link } from "react-router-dom";
 import arrow from "/icons/any/arrow.svg";
+import HTML from "/icons/tech/html.png";
+import CSS from "/icons/tech/css3.svg";
+import JS from "/icons/tech/js.png";
 
 const ExampleProjectSection = () => {
   return (
     <>
-      <div className="flex flex-col text-center items-center w-max p-3">
+      <div className="flex flex-col text-center items-center w-full p-3">
         <h3 className="text-4xl">Wybrane projekty</h3>
         <div className="flex">
-          <div className="flex flex-col text-center items-center w-1/2">
+          <div className="flex flex-col text-center items-center w-1/2 bg-gray-700/50 p-2 m-2 rounded-xl shadow-inner shadow-black">
             <h4>GamingHub</h4>
-            <p>
-              Moja praca inżynierska to zbiór wszystkich niezbędnych stron internetowych, stworzonych z myślą o
-              graczach.
-            </p>
+            <p>Moja praca inżynierska to zbiór wszystkich niezbędnych stron internetowych, stworzonych z myślą o graczach.</p>
+            <div className="flex">
+              <div className="w-1/3 bg-black/50 px-5 rounded-full m-2 flex items-center justify-center">
+                <img src={HTML} alt="ikonka HTML" className="w-[20px] m-2" />
+                HTML
+              </div>
+              <div className="w-1/3 bg-black/50 p-2 rounded-full m-2 flex items-center justify-center">
+                <img src={CSS} alt="ikonka CSS" className="w-[20px] m-2" />
+                CSS
+              </div>
+              <div className="w-1/3 bg-black/50 p-2 rounded-full m-2 flex items-center justify-center">
+                <img src={JS} alt="ikonka JavaScript" className="w-[20px] m-2" />
+                JavaScript
+              </div>
+            </div>
             <a href="https://link-to-gaminghub.com">Zobacz projekt</a>
           </div>
-          <div className="flex flex-col text-center items-center w-1/2">
+          <div className="flex flex-col text-center items-center w-1/2 bg-gray-700/50 p-2 m-2 rounded-xl shadow-inner shadow-black">
             <h4>PROJEKT 2</h4>
             <p>Opis projektu 2, który pokazuje jego funkcjonalności i zastosowanie.</p>
             <a href="https://link-to-project2.com">Zobacz projekt</a>

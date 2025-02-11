@@ -1,7 +1,7 @@
 import CodeSection from "./CodeSection";
 import IntroSection from "./IntroSection";
 import ExampleProjectSection from "./ExampleProjectSection";
-import ContactSection from "./ContactSection";
+import AboutSection from "./AboutSection";
 
 const Main = () => {
   return (
@@ -12,7 +12,7 @@ const Main = () => {
           <CodeSection />
         </div>
         <ExampleProjectSection />
-        <ContactSection />
+        <AboutSection />
       </main>
     </>
   );

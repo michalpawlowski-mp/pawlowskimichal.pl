@@ -1,12 +1,12 @@
 import me from "/icons/any/me-a.svg";
 import { Link } from "react-router-dom";
 
-const ConstactSection = () => {
+const AboutSection = () => {
   return (
     <>
       <div className="flex items-center p-4  m-4">
-        <div className="rounded-full overflow-hidden p-2 m-2 w-32 h-32 relative">
-          <img src={me} alt="Moje zdjęcie w wrsji animowanej" className="absolute z-10" />
+        <div className="rounded-full overflow-hidden p-2 m-2 w-32 h-32 relative shadow-lg shadow-orange-300">
+          <img src={me} alt="Moje zdjęcie w wrsji animowanej" className="absolute z-10 " />
           <div className="animate-spin duration-1000 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700  w-full h-full absolute top-0 left-0"></div>
         </div>
         <div className="flex flex-col items-center">
@@ -21,4 +21,4 @@ const ConstactSection = () => {
   );
 };
 
-export default ConstactSection;
+export default AboutSection;

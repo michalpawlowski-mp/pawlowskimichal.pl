@@ -117,3 +117,7 @@ h1::after {
     content: "Michał Pawłowski |";
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

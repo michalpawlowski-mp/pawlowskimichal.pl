@@ -5,7 +5,7 @@ const IntroSection = () => {
   return (
     <>
       <div className="flex flex-col items-center w-full justify-center">
-        {/* <h2 className="text-6xl">Frontend Developer</h2> */}
+        {/* <h2 className="text-6xl my-10">Frontend Developer</h2> */}
         <div className="bg-gray-800 text-gray-300 font-mono overflow-hidden rounded-lg shadow-lg w-full max-w-max h-max">
           <div className="w-full pl-1 h-max bg-gray-700 items-center  flex ">
             <div className="bg-rose-700 w-[10px] h-[10px] rounded-full justify-start m-1"></div>
@@ -29,7 +29,7 @@ const IntroSection = () => {
         </div>
 
         <Link to="/contact" className="m-3">
-          <div className="flex text-center items-center border-2 w-max p-3 rounded-2xl border-white">
+          <div className="flex text-center items-center  w-max px-3 my-5 rounded-full bg-slate-700 hover:bg-slate-600 ">
             <p className="transition-all duration-500 group-hover:translate-x-1">Kontakt ze mną</p>
             <img className="invert m-2" src={arrow} alt="strzałka w prawo" />
           </div>

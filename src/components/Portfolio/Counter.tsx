@@ -2,7 +2,7 @@ import web from "/icons/any/web.svg";
 import click from "/any/counter.svg";
 import github from "/icons/social/github.svg";
 import HTML from "/icons/tech/html.svg";
-import CSS from "/icons/tech/css3.svg";
+import CSS from "/icons/tech/css.svg";
 import JS from "/icons/tech/js.svg";
 
 const Counter = () => {
@@ -18,10 +18,10 @@ const Counter = () => {
           <img src={JS} alt="ikonka JavaScript" className="w-[20px] m-2" />
         </div>
         <div className="flex justify-center w-full">
-          <a href="https://github.com/aJpaRmp/Counter?tab=readme-ov-file" target="_blank" className="hover:bg-white/20 w-1/2 border-r-2 flex items-center justify-center">
+          <a href="https://github.com/michalpawlowski-mp/Counter?tab=readme-ov-file" target="_blank" className="hover:bg-white/20 w-1/2 border-r-2 flex items-center justify-center">
             <img src={github} alt=" link do GitHub" className="w-6 h-6 m-2 invert" />
           </a>
-          <a href="https://ajparmp.github.io/Counter/" target="_blank" className="hover:bg-white/20 w-1/2 flex items-center justify-center">
+          <a href="https://michalpawlowski-mp.github.io/Counter/" target="_blank" className="hover:bg-white/20 w-1/2 flex items-center justify-center">
             <img src={web} alt="link do strony" className="w-6 h-6 m-2 invert" />
           </a>
         </div>

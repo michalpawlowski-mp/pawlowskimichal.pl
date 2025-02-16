@@ -5,15 +5,17 @@ import GamingHub from "./Gaminghub";
 import MEETIT from "./MEET-IT";
 import LogReg from "./LogReg";
 import Counter from "./Counter";
+import CV from "./CV";
+import Kenia from "./Kenia";
 
 const Portfolio = () => {
   return (
     <>
       <section className="w-full flex flex-col items-center justify-center ">
-        <h2 className="text-3xl">Moje Portfolio</h2>
+        <h2 className="text-5xl pb-2">Moje Portfolio</h2>
         <div className="flex items-center justify-center w-full">
           <div className="w-2/5 h-px border-white bg-white rounded-full"></div>
-          <a href="https://github.com/aJpaRmp" className="flex items-center p-2 m-2 rounded-full border border-white">
+          <a href="https://github.com/michalpawlowski-mp" className="flex items-center p-2 m-2 rounded-full border border-white">
             <img className="invert rounded-full" src={github} alt="Link do mojego Linkedina" />
             <p className="m-1">Michał Pawłowski</p>
           </a>
@@ -25,6 +27,8 @@ const Portfolio = () => {
           <MEETIT />
           <LogReg />
           <Counter />
+          <CV />
+          <Kenia />
         </div>
         <div className="flex items-center justify-center w-full">
           <div className="w-2/5 h-px border-white bg-white rounded-full"></div>

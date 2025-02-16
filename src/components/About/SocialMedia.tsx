@@ -9,7 +9,7 @@ import Threads from "/icons/social/threads.svg";
 
 const SocialMedia = () => {
   return (
-    <article id="SocialMedia" className="flex flex-col items-center bg-gray-50/20 p-2 rounded-3xl w-1/4 m-2 ">
+    <article id="SocialMedia" className="flex flex-col items-center bg-gray-50/30 p-2 rounded-3xl w-1/4 m-3 ">
       <h2 className="text-2xl mb-2">SocialMedia</h2>
       <div className="flex flex-wrap justify-center items-center">
         <a target="_blank" href="https://www.linkedin.com/in/michalpawlowski-mp/" className="flex items-center p-2 m-2 rounded-full border border-white hover:bg-white/20">

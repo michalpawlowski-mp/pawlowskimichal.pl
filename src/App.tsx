@@ -4,8 +4,8 @@ import Main from "./components/Main/Main.tsx";
 import About from "./components/About/About.tsx";
 import Contact from "./components/Contact/Contact.tsx";
 import Portfolio from "./components/Portfolio/Portfolio.tsx";
-import CurriculumVitae from "./components/CurriculumVitae/CurriculumVitae.tsx";
 import Footer from "./components/Footer/Footer.tsx";
+// import CurriculumVitae from "./components/CurriculumVitae/CurriculumVitae.tsx";
 import "./style/style.css";
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/CurriculumVitae" element={<CurriculumVitae />} />
+        {/* <Route path="/CurriculumVitae" element={<CurriculumVitae />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

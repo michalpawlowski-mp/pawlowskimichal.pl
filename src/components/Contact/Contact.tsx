@@ -1,4 +1,4 @@
-const Contact = () => {
+const Contact : React.FC = () => {
   return (
     <section id="contact" className="w-full p-4 flex flex-col items-center">
       <h2 className="text-2xl font-bold mb-4 text-white">Contact Us</h2>
@@ -49,7 +49,7 @@ const Contact = () => {
           className="bg-white/20 p-4 m-4 rounded-full hover:bg-white/30 transition duration-300 ease-in-out"
           href="tel:+48728117024"
         >
-          728117024
+          728 117 024
         </a>
       </div>
     </section>

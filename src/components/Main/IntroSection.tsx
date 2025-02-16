@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import arrow from "/icons/any/arrow.svg";
 
-const IntroSection = () => {
+const IntroSection: React.FC  = () => {
   return (
     <div className="flex flex-col items-center w-full justify-center">
       {/* <h2 className="text-6xl my-10">Frontend Developer</h2> */}
@@ -19,14 +19,13 @@ const IntroSection = () => {
             <i className="not-italic text-vscodeBlue">console</i>
             <i className="not-italic text-white">.</i>
             <i className="not-italic text-yellow-200">log</i>
-            <i className="not-italic text-lime-800">
+            <i className="not-italic text-lime-900">
               (<i className="not-italic text-vscodeOrange">"Hello World!"</i>)
             </i>
             <i className="not-italic text-white">;</i>
           </p>
         </div>
       </div>
-
       <Link to="/contact" className="m-3 group">
         <div className="flex text-center items-center w-max px-3 my-5 rounded-full bg-slate-700 hover:bg-slate-600">
           <p className="transition-all duration-500 group-hover:translate-x-1">Kontakt ze mną</p>

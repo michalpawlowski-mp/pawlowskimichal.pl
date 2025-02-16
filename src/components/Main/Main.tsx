@@ -3,7 +3,7 @@ import IntroSection from "./IntroSection";
 import ExampleProjectSection from "./ExampleProjectSection";
 import AboutSection from "./AboutSection";
 
-const Main = () => {
+const Main : React.FC = () => {
   return (
     <>
       <main className="flex flex-col items-center p-auto container  mx-auto px-4">

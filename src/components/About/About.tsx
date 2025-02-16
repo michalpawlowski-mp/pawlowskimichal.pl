@@ -6,17 +6,17 @@ import Carrier from "./Carrier";
 import Education from "./Education";
 import SocialMedia from "./SocialMedia";
 
-const About = () => {
+const About: React.FC  = () => {
   return (
     <>
       <section id="About" className="flex flex-col items-center p-auto container mx-auto px-4">
         <Banner />
-        <div className="flex w-full justify-between">
+        <div className="flex flex-col w-full justify-center md:flex-row">
           <Skills />
           <Description />
           <SocialMedia />
         </div>
-        <div className="flex w-full justify-center my-1">
+        <div className="flex flex-col w-full justify-center md:flex-row">
           <Education />
           <Carrier />
           <Certificates />

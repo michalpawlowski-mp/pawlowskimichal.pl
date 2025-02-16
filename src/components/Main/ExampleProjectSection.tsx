@@ -4,7 +4,7 @@ import HTML from "/icons/tech/html.svg";
 import CSS from "/icons/tech/css.svg";
 import JS from "/icons/tech/js.svg";
 
-const ExampleProjectSection = () => {
+const ExampleProjectSection: React.FC  = () => {
   return (
     <>
       <div className="flex flex-col text-center items-center w-full p-3">

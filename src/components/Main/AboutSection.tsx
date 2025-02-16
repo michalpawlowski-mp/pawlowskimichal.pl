@@ -1,7 +1,7 @@
 import me from "/icons/any/me-a.svg";
 import { Link } from "react-router-dom";
 
-const AboutSection = () => {
+const AboutSection : React.FC  = () => {
   return (
     <>
       <div className="flex items-center p-4  m-4">

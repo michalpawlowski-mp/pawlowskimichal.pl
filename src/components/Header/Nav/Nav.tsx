@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 // import { useState } from "react";
 // import imgDownload from "/icons/any/downloads.svg";
 
-const Nav = () => {
-  // const [isHovered, setIsHovered] = useState(false);
+const Nav: React.FC  = () => {
+
 
   return (
     //685px
-    <nav className="flex flex-grow justify-center">
-      <ul className="flex gap-10 text-xl">
+    <nav className="flex flex-grow justify-center sm:justify-end">
+
+      <ul className="flex gap-10 text-xl sm:flex">
         <li>
           <Link to="/" className="text-white hover:text-gray-400">
             Home
@@ -29,16 +30,6 @@ const Nav = () => {
             Kontakt
           </Link>
         </li>
-        {/* <li className="flex items-center" id="cv" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-          <Link to="/CurriculumVitae" className="text-white hover:text-gray-400 flex items-center">
-            <p className="flex items-center">
-              C<b className={`font-normal ${isHovered ? "" : "hidden"}`}>urriculum </b>V<b className={`font-normal ${isHovered ? "" : "hidden"}`}>itae</b>
-            </p>
-          </Link>
-          <button id="dowloadCV" className="ml-3">
-            <img className="invert" src={imgDownload} alt="ikonka pobrania (CV - Michał Pawłowski)" />
-          </button>
-        </li> */}
       </ul>
     </nav>
   );

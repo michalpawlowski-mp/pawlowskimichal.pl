@@ -5,10 +5,10 @@ import HTML from "/icons/tech/html.svg";
 import CSS from "/icons/tech/css.svg";
 import JS from "/icons/tech/js.svg";
 
-const Meetit = () => {
+const Meetit: React.FC  = () => {
   return (
     <>
-      <div className="w-[400px] text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
+      <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
         <p className="text-2xl overflow-hidden w-full border-b-2 border-white p-2">MEET-IT</p>
         <img src={gaminghub} alt="Podglad strony GamingHub" className="" />
         <div className="flex justify-center w-full items-center border-t-2 border-b-2 border-white">

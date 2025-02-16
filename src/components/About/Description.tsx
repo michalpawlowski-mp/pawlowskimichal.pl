@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Description = () => {
+const Description: React.FC  = () => {
   const calculateAge = (birthDate: string) => {
     const birth = new Date(birthDate);
     const today = new Date();
@@ -15,7 +15,7 @@ const Description = () => {
   const age = calculateAge("2000-05-29");
 
   return (
-    <article id="description" className="w-2/5 p-2 bg-gray-50/30 rounded-3xl m-3">
+    <article id="description" className="w-full md:w-2/5 p-2 bg-gray-50/30 rounded-3xl m-2">
       <h3 className="text-3xl text-center">O mnie</h3>
       <div className="p-3">
         <p className="text-xl font-semibold mb-4">Cześć!</p>

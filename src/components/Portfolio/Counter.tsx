@@ -5,10 +5,10 @@ import HTML from "/icons/tech/html.svg";
 import CSS from "/icons/tech/css.svg";
 import JS from "/icons/tech/js.svg";
 
-const Counter = () => {
+const Counter: React.FC  = () => {
   return (
     <>
-      <div className="w-[400px] text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
+      <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
         <p className="text-2xl overflow-hidden w-full border-b-2 border-white p-2">Klicker</p>
         <img src={click} alt="Podglad formularza Logowanie/Rejestracji" className="" />
         <div className="flex justify-center w-full items-center border-t-2 border-b-2 border-white">

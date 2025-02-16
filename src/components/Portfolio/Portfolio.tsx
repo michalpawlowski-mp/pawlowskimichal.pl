@@ -8,21 +8,21 @@ import Counter from "./Counter";
 import CV from "./CV";
 import Kenia from "./Kenia";
 
-const Portfolio = () => {
+const Portfolio: React.FC  = () => {
   return (
     <>
       <section className="w-full flex flex-col items-center justify-center ">
         <h2 className="text-5xl pb-2">Moje Portfolio</h2>
         <div className="flex items-center justify-center w-full">
-          <div className="w-2/5 h-px border-white bg-white rounded-full"></div>
-          <a href="https://github.com/michalpawlowski-mp" className="flex items-center p-2 m-2 rounded-full border border-white">
+          <div className="w-1/4 md:w-2/5 h-px border-white bg-white rounded-full"></div>
+          <a href="https://github.com/michalpawlowski-mp" className="flex items-center p-2 m-2 rounded-full border border-white hover:bg-white/20">
             <img className="invert rounded-full" src={github} alt="Link do mojego Linkedina" />
             <p className="m-1">Michał Pawłowski</p>
           </a>
-          <div className="w-2/5 h-px border-white bg-white rounded-full"></div>
+          <div className="w-1/4 md:w-2/5  h-px border-white bg-white rounded-full"></div>
         </div>
 
-        <div className="project flex flex-wrap items-center justify-center w-full m-5">
+        <div className="flex flex-wrap items-center justify-center w-full m-5">
           <GamingHub />
           <MEETIT />
           <LogReg />
@@ -31,9 +31,9 @@ const Portfolio = () => {
           <Kenia />
         </div>
         <div className="flex items-center justify-center w-full">
-          <div className="w-2/5 h-px border-white bg-white rounded-full"></div>
+          <div className="w-1/4 md:w-2/5 h-px border-white bg-white rounded-full"></div>
           <p className="text-center mx-4">Tworzę i eksperymentuję</p>
-          <div className="w-2/5 h-px border-white bg-white rounded-full"></div>
+          <div className="w-1/4 md:w-2/5 h-px border-white bg-white rounded-full"></div>
         </div>
         <div className="w-full m-5 flex justify-center">
           <a className="bg-white/20 p-2 pe-4 m-4 rounded-3xl flex items-center" href="https://codepen.io/Michal-Pawlowski" target="_blank">

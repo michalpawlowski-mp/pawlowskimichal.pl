@@ -1,4 +1,4 @@
-const CodeSection : React.FC  = () => {
+const CodeSection: React.FC = () => {
   return (
     <>
       <div className="bg-gray-800 text-gray-300 font-mono overflow-hidden rounded-lg shadow-lg w-full max-w-max h-max">

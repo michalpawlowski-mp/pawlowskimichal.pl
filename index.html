@@ -2,20 +2,87 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon/MP.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio Michała Pawłowskiego, Frontend Developera. Zobacz moje projekty, umiejętności i doświadczenie." />
-    <meta name="keywords" content="Michał Pawłowski, portfolio, frontend developer, projekty, umiejętności, doświadczenie" />
-    <meta name="author" content="Michał Pawłowski" />
-    <meta property="og:title" content="Michał Pawłowski | MP.Dev" />
-    <meta property="og:description" content="Portfolio Michała Pawłowskiego, Frontend Developera. Zobacz moje projekty, umiejętności i doświadczenie." />
-    <title>Michał Pawłowski | MP.Dev</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <title>Coming Soon</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 3rem;
+        overflow: hidden;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .letter {
+        animation: bounce 1.5s infinite ease-in-out;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .letter:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .letter:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      .letter:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .letter:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      .letter:nth-child(5) {
+        animation-delay: 0.4s;
+      }
+      .letter:nth-child(6) {
+        animation-delay: 0.5s;
+      }
+      .letter:nth-child(7) {
+        animation-delay: 0.6s;
+      }
+      .letter:nth-child(8) {
+        animation-delay: 0.7s;
+      }
+      .letter:nth-child(9) {
+        animation-delay: 0.8s;
+      }
+      .letter:nth-child(10) {
+        animation-delay: 0.9s;
+      }
+      .letter:nth-child(11) {
+        animation-delay: 1s;
+      }
+    </style>
   </head>
-  <body class="text-white font-roboto w-screen h-screen bg-[url('/background/bg.svg')] bg-cover bg-center bg-fixed">
-    <div id="root" class="w-screen h-screen flex flex-col justify-between"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body>
+    <div class="container">
+      <span class="letter">C</span>
+      <span class="letter">o</span>
+      <span class="letter">m</span>
+      <span class="letter">i</span>
+      <span class="letter">n</span>
+      <span class="letter">g</span>
+      <span>&nbsp;</span>
+      <span class="letter">S</span>
+      <span class="letter">o</span>
+      <span class="letter">o</span>
+      <span class="letter">n</span>
+    </div>
   </body>
 </html>

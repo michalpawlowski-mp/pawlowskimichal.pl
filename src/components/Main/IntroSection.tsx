@@ -10,9 +10,9 @@ const IntroSection: React.FC = () => {
           <p className="m-auto">pawlowskimichal.pl</p>
         </div>
 
-        <div className="flex items-center text-center pl-2">
-          <p className="mr-3 text-2xl md:text-5xl">1</p>
-          <p className="text-2xl md:text-5xl m-5">
+        <div className="flex items-center text-center pl-2 text-2xl 2xl:text-5xl">
+          <p className="mr-3">1</p>
+          <p className="m-5">
             <i className="not-italic text-vscodeBlue">console</i>
             <i className="not-italic text-white">.</i>
             <i className="not-italic text-yellow-200">log</i>

@@ -5,9 +5,9 @@ import SASS from "/icons/tech/sass.svg";
 import JS from "/icons/tech/js.svg";
 import Vite from "/icons/tech/vite.svg";
 import React from "/icons/tech/react.svg";
-import Bootstrap from "/icons/tech/Bootstrap.svg";
+import Bootstrap from "/icons/tech/bootstrap.svg";
 
-const Kenia: React.FC  = () => {
+const Kenia: React.FC = () => {
   return (
     <>
       <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">

@@ -7,9 +7,9 @@ import Tiktok from "/icons/social/tiktok.svg";
 import Facebook from "/icons/social/facebook.svg";
 import Threads from "/icons/social/threads.svg";
 
-const SocialMedia : React.FC  = () => {
+const SocialMedia: React.FC = () => {
   return (
-    <article id="SocialMedia" className="flex flex-col items-center bg-gray-50/30 p-2 rounded-3xl w-full md:w-1/4 m-2 ">
+    <article id="SocialMedia" className="flex flex-col items-center bg-gray-50/30 p-2 rounded-3xl w-full md:w-1/4 md:mx-2 my-2 ">
       <h2 className="text-2xl mb-2">SocialMedia</h2>
       <div className="flex flex-wrap justify-center items-center">
         <a target="_blank" href="https://www.linkedin.com/in/michalpawlowski-mp/" className="flex items-center p-2 m-2 rounded-full border border-white hover:bg-white/20">

@@ -5,14 +5,14 @@ import SASS from "/icons/tech/sass.svg";
 import JS from "/icons/tech/js.svg";
 import Vite from "/icons/tech/vite.svg";
 import React from "/icons/tech/react.svg";
-import Bootstrap from "/icons/tech/Bootstrap.svg";
+import Bootstrap from "/icons/tech/bootstrap.svg";
 
-const CV: React.FC  = () => {
+const CV: React.FC = () => {
   return (
     <>
       <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
         <p className="text-2xl overflow-hidden w-full border-b-2 border-white p-2">Curriculum vitae</p>
-        <img src={cv} alt="Podglad strony CV"/>
+        <img src={cv} alt="Podglad strony CV" />
         <div className="flex justify-center w-full items-center border-t-2 border-b-2 border-white">
           {/* <p className="text-xl">Użyte technologie :</p> */}
           <img src={Vite} alt="ikonka Vite" className="w-[20px] m-2" />

@@ -6,9 +6,12 @@ import MEETIT from "./MEET-IT";
 import LogReg from "./LogReg";
 import Counter from "./Counter";
 import CV from "./CV";
+import XO from "./XO";
+import NSC from "./NSC";
 import Kenia from "./Kenia";
+import Weather from "./Weather";
 
-const Portfolio: React.FC  = () => {
+const Portfolio: React.FC = () => {
   return (
     <>
       <section className="w-full flex flex-col items-center justify-center ">
@@ -28,7 +31,10 @@ const Portfolio: React.FC  = () => {
           <LogReg />
           <Counter />
           <CV />
+          <XO />
+          <NSC />
           <Kenia />
+          <Weather />
         </div>
         <div className="flex items-center justify-center w-full">
           <div className="w-1/4 md:w-2/5 h-px border-white bg-white rounded-full"></div>

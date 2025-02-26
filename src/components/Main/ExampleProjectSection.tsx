@@ -30,7 +30,7 @@ const ExampleProjectSection: React.FC = () => {
             <a href="https://link-to-gaminghub.com">Zobacz projekt</a>
           </div>
           <div className="flex flex-col text-center items-center w-full md:w-1/2 bg-gray-700/50 p-2 m-2 rounded-xl shadow-inner shadow-black">
-            <h4>PROJEKT 2</h4>
+            <h4 className="text-2xl">Gra w kółko i krzyżyk</h4>
             <p>Opis projektu 2, który pokazuje jego funkcjonalności i zastosowanie.</p>
             <a href="https://link-to-project2.com">Zobacz projekt</a>
           </div>

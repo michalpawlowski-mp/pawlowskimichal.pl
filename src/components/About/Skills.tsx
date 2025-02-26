@@ -1,6 +1,6 @@
-const Skills : React.FC  = () => {
+const Skills: React.FC = () => {
   return (
-    <article id="skills" className="w-full md:w-2/5 bg-gray-50/30 rounded-3xl flex flex-col m-2 p-2">
+    <article id="skills" className="w-full md:w-2/5 bg-gray-50/30 rounded-3xl flex flex-col md:mx-2 my-2 p-2">
       <p className="text-3xl text-center pb-2">Znane mi technologie</p>
       <ul className="flex flex-wrap justify-center items-center">
         <li className="w-1/4 text-center m-1 p-2 bg-black/30 rounded-2xl">HTML</li>

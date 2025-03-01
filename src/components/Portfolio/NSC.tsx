@@ -9,7 +9,7 @@ const NSC: React.FC = () => {
   return (
     <>
       <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
-        <p className="text-2xl overflow-hidden w-full border-b-2 border-white p-2">Kółko i Krzyżyk</p>
+        <p className="text-2xl overflow-hidden w-full border-b-2 border-white p-2">Kalkulator systemów liczbowych</p>
         <img src={numSysCon} alt="Podglad strony kólko i krzyżyk" />
         <div className="flex justify-center w-full items-center border-t-2 border-b-2 border-white">
           {/* <p className="text-xl">Użyte technologie :</p> */}

@@ -3,7 +3,7 @@ import github from "/icons/social/github.svg";
 import kik from "/any/kik.svg";
 import HTML from "/icons/tech/html.svg";
 import CSS from "/icons/tech/css.svg";
-import JS from "/icons/tech/js.svg";
+import TS from "/icons/tech/ts.svg";
 
 const XO: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const XO: React.FC = () => {
           {/* <p className="text-xl">Użyte technologie :</p> */}
           <img src={HTML} alt="ikonka HTML" className="w-[20px] m-2" />
           <img src={CSS} alt="ikonka CSS" className="w-[20px] m-2" />
-          <img src={JS} alt="ikonka JavaScript" className="w-[20px] m-2" />
+          <img src={TS} alt="ikonka Typescript" className="w-[20px] m-2" />
         </div>
         <div className="flex justify-center w-full">
           <a href="https://github.com/michalpawlowski-mp/X-O" target="_blank" className="hover:bg-white/20 w-1/2 border-r-2 flex items-center justify-center">

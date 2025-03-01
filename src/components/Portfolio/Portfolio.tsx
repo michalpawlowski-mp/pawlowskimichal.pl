@@ -10,6 +10,10 @@ import XO from "./XO";
 import NSC from "./NSC";
 import Kenia from "./Kenia";
 import Weather from "./Weather";
+import Slider from "./Slider";
+import RNL from "./RandomNL";
+import Cal from "./Calc";
+import Todo from "./Todo";
 
 const Portfolio: React.FC = () => {
   return (
@@ -26,15 +30,19 @@ const Portfolio: React.FC = () => {
         </div>
 
         <div className="flex flex-wrap items-center justify-center w-full m-5">
+          <Weather />
           <GamingHub />
           <MEETIT />
           <LogReg />
           <Counter />
+          <Slider />
           <CV />
+          <Todo />
           <XO />
+          <Cal />
           <NSC />
+          <RNL />
           <Kenia />
-          <Weather />
         </div>
         <div className="flex items-center justify-center w-full">
           <div className="w-1/4 md:w-2/5 h-px border-white bg-white rounded-full"></div>

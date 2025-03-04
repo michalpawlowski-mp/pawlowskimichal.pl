@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 const Carrier: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
-  const toggleVisibility = () => {
-    setIsVisible(!isVisible);
+  const toggleVisibility: () => void = () => {
+    setIsVisible((prev) => !prev);
   };
 
   return (
@@ -15,13 +15,13 @@ const Carrier: React.FC = () => {
       </button>
       {isVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center backdrop-blur-sm">
-          <div className="bg-black/70 p-4 rounded-lg max-w-3xl w-full">
-            <button onClick={toggleVisibility} className="mb-4 p-2 bg-gray-500/50 text-white rounded">
+          <div className="bg-black/40 p-4 rounded-2xl m-2 max-w-3xl w-max ">
+            <button onClick={toggleVisibility} className="mb-4 p-2 bg-white/10 text-white rounded">
               Zamknij
             </button>
             <div className="flex flex-col p-2">
               <p className="pb-3">Wsparcie IT</p>
-              <div className="flex">
+              <div className="flex flex-col md:flex-row">
                 <ul className="biziel m-2 p-4 bg-black/50 rounded-3xl shadow shadow-white">
                   <li className="date text-xs">08.2022 – 09.2022 (2 mies.)</li>
                   <li className="name">Szpital Uniwersytecki nr 2 im. Jana Biziela w Bydgoszczy</li>

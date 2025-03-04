@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 const Education: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
-  const toggleVisibility = () => {
-    setIsVisible(!isVisible);
+  const toggleVisibility: () => void = () => {
+    setIsVisible((prev) => !prev);
   };
 
   return (
@@ -15,11 +15,11 @@ const Education: React.FC = () => {
       </button>
       {isVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center backdrop-blur-sm">
-          <div className="bg-black/70 p-4 rounded-lg max-w-3xl w-max ">
-            <button onClick={toggleVisibility} className="mb-4 p-2 bg-gray-500/50 text-white rounded">
+          <div className="bg-black/40 p-4 rounded-2xl  max-w-3xl w-max ">
+            <button onClick={toggleVisibility} className="mb-4 p-2 bg-white/10 text-white rounded">
               Zamknij
             </button>
-            <div className="flex gap-4  ">
+            <div className="flex gap-4 flex-col md:flex-row">
               <ul className="ukw  p-4 bg-black/50 rounded-3xl shadow shadow-white">
                 <li className="text-xs">10.2020 – 03.2024 (3 lata 6 mies.)</li>
                 <li className="">Uniwersytet Kazimierza Wielkiego w Bydgoszczy</li>

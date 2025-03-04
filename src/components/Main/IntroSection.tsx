@@ -1,6 +1,6 @@
 const IntroSection: React.FC = () => {
   return (
-    <div className="flex flex-col mb-3 items-center w-full justify-center">
+    <div className="flex flex-col mb-3 items-center  md:w-1/2 w-full justify-center">
       {/* <h2 className="text-6xl my-10">Frontend Developer</h2> */}
       <div className="bg-gray-800 text-gray-300 font-mono overflow-hidden rounded-lg shadow-lg w-full max-w-max h-max">
         <div className="w-full pl-1 h-max bg-gray-700 items-center flex">

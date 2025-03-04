@@ -14,6 +14,17 @@ const Contact: React.FC = () => {
             required
           />
         </div>
+        <div className="mb-4">
+          <label className="block text-white text-sm font-bold mb-2" htmlFor="email">
+            Temat
+          </label>
+          <input
+            type="text"
+            id="topic"
+            className="shadow appearance-none border border-gray-600 rounded-lg w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-700"
+            required
+          />
+        </div>
         <div className="mb-6">
           <label className="block text-white text-sm font-bold mb-2" htmlFor="message">
             Wiadomość

@@ -1,6 +1,6 @@
 import CodeSection from "./CodeSection";
 import IntroSection from "./IntroSection";
-import ExampleProjectSection from "./ExampleProjectSection";
+import ExampleProjectSection from "./ExampleProject/ExampleProjectSection";
 import AboutSection from "./AboutSection";
 import ButtonContact from "./ButtonContact";
 

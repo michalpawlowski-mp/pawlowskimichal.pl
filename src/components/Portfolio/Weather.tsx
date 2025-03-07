@@ -1,6 +1,6 @@
 import web from "/icons/any/web.svg";
 import github from "/icons/social/github.svg";
-import wApp from "/any/wApp.svg";
+import wApp from "/any/WeatherApp/WeatherApp.svg";
 import HTML from "/icons/tech/html.svg";
 import LESS from "/icons/tech/less.svg";
 import JS from "/icons/tech/js.svg";
@@ -18,7 +18,7 @@ const Weather: React.FC = () => {
           <img src={JS} alt="ikonka JavaScript" className="w-[20px] m-2" />
         </div>
         <div className="flex justify-center w-full">
-          <a href="https://github.com/michalpawlowski-mp/WeatherApp++++" target="_blank" className="hover:bg-white/20 w-1/2 border-r-2 flex items-center justify-center">
+          <a href="https://github.com/michalpawlowski-mp/WeatherApp" target="_blank" className="hover:bg-white/20 w-1/2 border-r-2 flex items-center justify-center">
             <img src={github} alt=" link do GitHub" className="w-6 h-6 m-2 invert" />
           </a>
           <a href="https://michalpawlowski-mp.github.io/WeatherApp/" target="_blank" className="hover:bg-white/20 w-1/2 flex items-center justify-center">

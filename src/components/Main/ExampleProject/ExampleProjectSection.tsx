@@ -1,6 +1,6 @@
-import ProjectOne from "./projectOne";
-import ProjectTwo from "./projectTwo";
-import ProjectThree from "./projectThree";
+import ProjectOne from "./ProjectOne/projectOne";
+import ProjectTwo from "./ProjectTwo/projectTwo";
+import ProjectThree from "./ProjectThree/projectThree";
 import ButtonProject from "./ButtonProject";
 
 const ExampleProjectSection: React.FC = () => {

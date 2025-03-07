@@ -1,11 +1,11 @@
 import web from "/icons/any/web.svg";
-import gaminghub from "/any/gaminghub.svg";
+import gaminghub from "/any/GamingHub/gaminghub-game.svg";
 import github from "/icons/social/github.svg";
 import HTML from "/icons/tech/html.svg";
 import CSS from "/icons/tech/css.svg";
 import JS from "/icons/tech/js.svg";
 
-const GamingHub: React.FC  = () => {
+const GamingHub: React.FC = () => {
   return (
     <>
       <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg ">

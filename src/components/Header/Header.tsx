@@ -1,23 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import Nav from "./Nav/Nav.tsx";
 import { Link } from "react-router-dom";
+import { useNavigation } from "./useNavigation.ts";
 
 const Header: React.FC = () => {
-  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
-
-  const toggleNav: () => void = () => {
-    setIsNavOpen((prev) => !prev);
-  };
+  const { isNavOpen, navRef, buttonRef, toggleNav } = useNavigation();
 
   return (
     <header className="flex flex-row items-center justify-between w-full p-4">
       <Link to="/" className="items-center w-[270px]">
         <h1 className="text-2xl text-white uppercase"></h1>
       </Link>
-      <button className="text-white z-50 text-4xl sm:hidden" onClick={toggleNav}>
+      <button ref={buttonRef} className="text-white z-30 text-4xl sm:hidden absolute right-4 top-4" onClick={toggleNav}>
         {isNavOpen ? "\u00D7" : "\u2630"}
       </button>
-      <Nav isOpen={isNavOpen} toggleNav={toggleNav} />
+      <div ref={navRef}>
+        <Nav isOpen={isNavOpen} toggleNav={toggleNav} />
+      </div>
     </header>
   );
 };

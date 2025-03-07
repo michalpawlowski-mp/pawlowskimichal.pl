@@ -14,6 +14,7 @@ import Slider from "./Slider";
 import RNL from "./RandomNL";
 import Cal from "./Calc";
 import Todo from "./Todo";
+import DM from "./DarkMode";
 
 const Portfolio: React.FC = () => {
   return (
@@ -37,6 +38,7 @@ const Portfolio: React.FC = () => {
           <Counter />
           <Slider />
           <CV />
+          <DM />
           <Todo />
           <XO />
           <Cal />

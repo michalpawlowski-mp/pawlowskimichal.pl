@@ -15,7 +15,7 @@ const Certificates: React.FC = () => {
       </button>
       {isVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center backdrop-blur-sm">
-          <div className="bg-white/10 p-4 rounded-2xl m-2 max-w-3xl w-max ">
+          <div className="bg-white/10 shadow-inner shadow-black p-4 rounded-2xl m-2 max-w-3xl w-max ">
             <button onClick={toggleVisibility} className="mb-4 p-2 bg-white/10 text-white rounded">
               Zamknij
             </button>
@@ -32,6 +32,10 @@ const Certificates: React.FC = () => {
                 <li className="text-xs">01.2020</li>
                 <li className="text-sm">E14 Tworzenie aplikacji internetowych i baz danych oraz administrowanie bazami</li>
               </ul>
+              {/* <ul className="m-2 p-4 bg-black/50 rounded-3xl shadow shadow-white">
+                <li className="text-xs">01.2023</li>
+                <li className="text-sm">A1/A3</li>
+              </ul> */}
             </div>
           </div>
         </div>

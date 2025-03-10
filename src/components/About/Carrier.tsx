@@ -15,33 +15,33 @@ const Carrier: React.FC = () => {
       </button>
       {isVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center backdrop-blur-sm">
-          <div className="bg-black/40 p-4 rounded-2xl m-2 max-w-3xl w-max ">
+          <div className="bg-white/10  shadow-inner shadow-black p-1 rounded-2xl m-1 max-w-3xl w-max max-h-5/6 overflow-auto ">
             <button onClick={toggleVisibility} className="mb-4 p-2 bg-white/10 text-white rounded">
               Zamknij
             </button>
             <div className="flex flex-col p-2">
               <p className="pb-3">Wsparcie IT</p>
               <div className="flex flex-col md:flex-row">
-                <ul className="biziel m-2 p-4 bg-black/50 rounded-3xl shadow shadow-white">
-                  <li className="date text-xs">08.2022 – 09.2022 (2 mies.)</li>
-                  <li className="name">Szpital Uniwersytecki nr 2 im. Jana Biziela w Bydgoszczy</li>
-                  <li className="position text-sm">Dział Samodzielnej Sekcji Łączności (STAŻ)</li>
+                <ul className="biziel m-0 p-4 bg-black/50 rounded-3xl shadow shadow-white">
+                  <li className=" text-xs">08.2022 – 09.2022 (2 mies.)</li>
+                  <li className="">Szpital Uniwersytecki nr 2 im. Jana Biziela w Bydgoszczy</li>
+                  <li className="text-sm">Dział Samodzielnej Sekcji Łączności (STAŻ)</li>
                 </ul>
-                <ul className="iiukw m-2 p-4 bg-black/50 rounded-3xl shadow shadow-white">
+                <ul className="iiukw my-3 p-4 bg-black/50 rounded-3xl shadow shadow-white">
                   <li className="date text-xs">12.2021 – 08.2022 (9 mies.)</li>
-                  <li className="name">Instytut Informatyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy</li>
-                  <li className="position">Dział Techniczny</li>
+                  <li className="">Instytut Informatyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy</li>
+                  <li className="text-sm">Dział Techniczny</li>
                 </ul>
-                <ul className="bass m-2 p-4 bg-black/50 rounded-3xl shadow shadow-white">
+                <ul className="bass m-0 p-4 bg-black/50 rounded-3xl shadow shadow-white">
                   <li className="date text-xs">07.2021 – 09.2021 (3 mies.)</li>
-                  <li className="name">
+                  <li className="">
                     BELMA ACCESSORIES SYSTEMS
-                    <i className="city"> | Bydgoszcz</i>
+                    <i className=""> | Bydgoszcz</i>
                   </li>
-                  <li className="position">Referent ds. Informatycznych</li>
+                  <li className="text-sm">Referent ds. Informatycznych</li>
                 </ul>
               </div>
-              <p className="py-3">Frontend Developer</p>
+              {/* <p className="py-3">Frontend Developer</p> */}
             </div>
           </div>
         </div>

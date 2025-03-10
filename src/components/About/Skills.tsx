@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
         <li className="w-[100px] text-center m-1 p-2 bg-black/30 rounded-2xl">Git</li>
         <li className="w-[100px] text-center m-1 p-2 bg-black/30 rounded-2xl">Vite</li>
       </ul>
-      <p className="text-3xl text-center py-2 mt-2 mx-4 border-t-2 ">Znane mi programy</p>
+      <p className="text-3xl text-center py-2 mt-2 mx-2 border-t-2 ">Znane mi programy</p>
       <ul className="flex flex-wrap justify-center items-center ">
         <li className="w-[100px] text-center m-1 p-2 bg-black/30 rounded-2xl">VS Code</li>
         <li className="w-[100px] text-center m-1 p-2 bg-black/30 rounded-2xl">Photoshop</li>

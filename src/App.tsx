@@ -1,5 +1,4 @@
-import { HashRouter as Router , Route , Routes } from "react-router-dom";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header.tsx";
 import Main from "./components/Main/Main.tsx";
 import About from "./components/About/About.tsx";
@@ -11,17 +10,16 @@ import "./style/style.css";
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter basename="/">
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        {/* <Route path="/CurriculumVitae" element={<CurriculumVitae />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 };
 

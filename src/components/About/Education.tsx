@@ -15,7 +15,7 @@ const Education: React.FC = () => {
       </button>
       {isVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center backdrop-blur-sm">
-          <div className="bg-black/40 p-4 rounded-2xl  max-w-3xl w-max ">
+          <div className="bg-white/10  shadow-inner shadow-black p-4 rounded-2xl  max-w-3xl w-max ">
             <button onClick={toggleVisibility} className="mb-4 p-2 bg-white/10 text-white rounded">
               Zamknij
             </button>
@@ -23,14 +23,14 @@ const Education: React.FC = () => {
               <ul className="ukw  p-4 bg-black/50 rounded-3xl shadow shadow-white">
                 <li className="text-xs">10.2020 – 03.2024 (3 lata 6 mies.)</li>
                 <li className="">Uniwersytet Kazimierza Wielkiego w Bydgoszczy</li>
-                <li className="">Kierunek: Informatyka</li>
-                <li className="">Poziom wykształcenia: Inżynier</li>
+                <li className="text-sm">Kierunek: Informatyka</li>
+                <li className="text-sm">Poziom wykształcenia: Inżynier</li>
               </ul>
               <ul className="zsm  p-4 bg-black/50 rounded-3xl shadow shadow-white ">
                 <li className="text-xs">09.2016 – 04.2020 (3 lata 8 mies.)</li>
                 <li className="">Zespół Szkół Mechanicznych nr. 1 w Bydgoszczy</li>
-                <li className="">Kierunek: Informatyka</li>
-                <li className=" ">Poziom wykształcenia: Technik</li>
+                <li className="text-sm">Kierunek: Informatyka</li>
+                <li className="text-sm">Poziom wykształcenia: Technik</li>
               </ul>
             </div>
           </div>

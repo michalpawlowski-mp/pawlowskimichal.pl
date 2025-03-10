@@ -5,9 +5,9 @@ const ButtonContact: React.FC = () => {
   return (
     <>
       <Link to="/contact" className="">
-        <div className="flex text-center items-center group">
+        <div className="flex text-center items-center group ">
           <p className="transition-all duration-500 group-hover:translate-x-1">Kontakt ze mną</p>
-          <img className="invert m-2 transition-transform duration-500 group-hover:translate-x-2" src={arrow} alt="strzałka w prawo" />
+          <img className="invert mx-2 mb-3 transition-transform duration-500 group-hover:translate-x-2" src={arrow} alt="strzałka w prawo" />
         </div>
       </Link>
     </>

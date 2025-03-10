@@ -6,10 +6,10 @@ import Carrier from "./Carrier";
 import Education from "./Education";
 import SocialMedia from "./SocialMedia";
 
-const About: React.FC  = () => {
+const About: React.FC = () => {
   return (
     <>
-      <section id="About" className="flex flex-col items-center p-auto container mx-auto px-4">
+      <section id="About" className="flex flex-col items-center p-auto container mx-auto px-3">
         <Banner />
         <div className="flex flex-col w-full justify-center md:flex-row">
           <Skills />

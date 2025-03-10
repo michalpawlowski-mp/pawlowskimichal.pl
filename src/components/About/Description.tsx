@@ -32,9 +32,9 @@ const Description: React.FC = () => {
           </Link>
         </p>
         <p className="text-sm">
-          Jestem osobą zdeterminowaną, nastawioną na naukę i otwartą na nowe wyzwania. Jeśli poszukujesz młodego, ambitnego programisty do swojego zespołu
-          <Link to="/contact" className="text-blue-500 ps-1 block">
-            – zapraszam do kontaktu!
+          Jestem osobą zdeterminowaną, nastawioną na naukę i otwartą na nowe wyzwania. Jeśli poszukujesz młodego, ambitnego programisty do swojego zespołu.
+          <Link to="/contact" className="text-blue-500 block text-center">
+            Zapraszam do kontaktu!
           </Link>
         </p>
       </div>

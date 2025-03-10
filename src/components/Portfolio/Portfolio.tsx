@@ -23,7 +23,7 @@ const Portfolio: React.FC = () => {
         <h2 className="text-5xl pb-2">Moje Portfolio</h2>
         <div className="flex items-center justify-center w-full">
           <div className="w-1/4 md:w-2/5 h-px border-white bg-white rounded-full"></div>
-          <a href="https://github.com/michalpawlowski-mp" className="flex items-center p-2 m-2 rounded-full border border-white hover:bg-white/20">
+          <a href="https://github.com/michalpawlowski-mp" className="flex items-center p-2 m-1 rounded-full border border-white hover:bg-white/20">
             <img className="invert rounded-full" src={github} alt="Link do mojego Linkedina" />
             <p className="m-1">Michał Pawłowski</p>
           </a>
@@ -48,7 +48,7 @@ const Portfolio: React.FC = () => {
         </div>
         <div className="flex items-center justify-center w-full">
           <div className="w-1/4 md:w-2/5 h-px border-white bg-white rounded-full"></div>
-          <p className="text-center mx-4">Tworzę i eksperymentuję</p>
+          <p className="text-center mx-2">Tworzę i eksperymentuję</p>
           <div className="w-1/4 md:w-2/5 h-px border-white bg-white rounded-full"></div>
         </div>
         <div className="w-full m-5 flex justify-center">

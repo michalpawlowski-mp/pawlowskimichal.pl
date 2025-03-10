@@ -27,7 +27,7 @@ const ProjectOnePanel: React.FC<ProjectOneProps> = ({ toggleVisibility }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-40 items-center backdrop-blur-sm">
-      <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-1 max-w-3xl w-full h-5/6 overflow-auto">
+      <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-full h-5/6 overflow-auto">
         <div className="flex w-full items-center">
           <button onClick={toggleVisibility} className="p-2 bg-white/10 text-white rounded-xl">
             Zamknij
@@ -56,7 +56,7 @@ const ProjectOnePanel: React.FC<ProjectOneProps> = ({ toggleVisibility }) => {
                 Dodatkowo, kod JavaScript umożliwia dynamiczną zmianę aktywnych opcji, takich jak sortowanie czy zmiana statusu "ulubione". Strona wykorzystuje również style CSS, aby była responsywna
                 i dostosowana do wyświetlania na różnych urządzeniach (mobilnych, desktopowych).
               </p>
-              <p className="text-sm my-2">
+              <p className="text-sm my-2 pb-2">
                 Strona została zaprojektowana w sposób prosty i intuicyjny, dostarczając użytkownikom przyjemne doświadczenie przeglądania. Dzięki dynamicznym interakcjom, użytkownicy mogą szybko
                 znaleźć interesujące ich treści i łatwo przechodzić między kategoriami. Projekt ma na celu stworzenie centralnego źródła informacji, które będzie pełnić rolę bazy zasobów i linków dla
                 każdego pasjonata gier.

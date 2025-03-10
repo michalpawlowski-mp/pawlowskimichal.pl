@@ -16,14 +16,14 @@ interface ProjectTwoProps {
 const ProjectTwoPanel: React.FC<ProjectTwoProps> = ({ toggleVisibility }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-40 items-center backdrop-blur-sm">
-      <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl m-1 max-w-3xl w-max">
+      <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-max h-5/6 overflow-auto">
         <div className="flex w-full items-center">
           <button onClick={toggleVisibility} className="p-2 bg-white/10 text-white rounded-xl ">
             Zamknij
           </button>
           <h5 className="text-2xl text-center m-auto">Kółko i krzyżyk</h5>
         </div>
-        <div className="flex flex-col text-left  p-2 my-4">
+        <div className="flex flex-col text-left  p-2 my-3">
           <p className="text-xl">Funkcjonalności:</p>
           <p className="text-sm mt-1">✅ Interaktywna plansza 3x3 do gry w „Kółko i Krzyżyk”</p>
           <p className="text-sm mt-1">✅ Dynamiczna zmiana gracza (X i O)</p>

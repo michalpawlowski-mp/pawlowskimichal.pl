@@ -14,7 +14,7 @@ const SocialMedia: React.FC = () => {
       <div className="flex flex-wrap justify-center items-center">
         <a target="_blank" href="https://www.linkedin.com/in/michalpawlowski-mp/" className="flex items-center p-2 m-2 rounded-full border border-white hover:bg-white/20">
           <img className="invert rounded-full" src={Linkedin} alt="Link do mojego Linkedina" />
-          <p className="mx-3">Michał Pawłowski</p>
+          <p className="mx-1">Michał Pawłowski</p>
         </a>
         <a target="_blank" href="https://github.com/aJpaRmp" className="flex items-center p-2 m-2 rounded-full border border-white hover:bg-white/20">
           <img className="invert rounded-full" src={Github} alt="Link do mojego Githuba" />

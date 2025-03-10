@@ -9,11 +9,11 @@ interface NavProps {
 const Nav: React.FC<NavProps> = ({ isOpen }) => {
   return (
     <nav
-      className={`fixed top-0 right-0 h-full w-1/2 bg-gray-800 md:bg-gray-800/0 bg-opacity-85 z-20 p-4 transition-transform transform ${
+      className={`fixed top-0 right-0 h-full w-1/2 bg-gray-800 sm:bg-gray-800/0 bg-opacity-85 z-20 p-4 transition-transform transform ${
         isOpen ? "translate-x-0" : "translate-x-full"
       } sm:relative sm:translate-x-0 sm:flex sm:flex-grow sm:justify-center sm:w-auto sm:bg-opacity-100`}
     >
-      <ul className="flex flex-col items-center justify-center h-full md:gap-10 gap-40 md:text-xl text-3xl sm:flex-row">
+      <ul className="flex flex-col items-center justify-center h-full sm:gap-10 gap-24 sm:text-xl text-3xl sm:flex-row">
         <li>
           <Link to="/" className="text-white hover:text-gray-400">
             Home

@@ -9,13 +9,11 @@
     <meta name="author" content="Michał Pawłowski" />
     <meta property="og:title" content="Michał Pawłowski | MP.Dev" />
     <meta property="og:description" content="Portfolio Michała Pawłowskiego, Frontend Developera. Zobacz moje projekty, umiejętności i doświadczenie." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/background/bg.svg" as="image" />
     <title>Michał Pawłowski | MP.Dev</title>
   </head>
-  <body class="text-white font-roboto w-screen h-screen bg-[url('/background/bg.svg')] bg-cover bg-center bg-fixed">
+  <body class="text-white w-screen h-screen bg-[url('/background/bg.svg')] bg-cover bg-center bg-fixed">
     <div id="root" class="w-screen h-screen flex flex-col justify-between"></div>
-    <script type="module" src="./src/main.tsx"></script>
+    <script type="module" src="./src/main.tsx" defer></script>
   </body>
 </html>

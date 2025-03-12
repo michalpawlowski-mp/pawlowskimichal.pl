@@ -21,15 +21,15 @@ const ProjectThree: React.FC = () => {
         </p>
         <div className="flex flex-wrap justify-center items-center">
           <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2 ">
-            <img src={HTML} alt="ikonka HTML" className="w-[20px] m-2" />
+            <img src={HTML} alt="ikonka HTML" className=" m-2" />
             HTML
           </div>
           <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2 ">
-            <img src={LESS} alt="ikonka LESS" className="w-[30px] mx-2 my-3" />
+            <img src={LESS} alt="ikonka LESS" className=" mx-2 my-3" />
             LESS
           </div>
           <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2 ">
-            <img src={JS} alt="ikonka JavaScript" className="w-[20px] m-2" />
+            <img src={JS} alt="ikonka JavaScript" className="rounded-sm m-2" />
             JavaScript
           </div>
           <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2 ">inne</div>

@@ -20,15 +20,15 @@ const ProjectTwo: React.FC = () => {
         </p>
         <div className="flex flex-wrap justify-center">
           <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2  ">
-            <img src={HTML} alt="ikonka HTML" className="w-[20px] m-2" />
+            <img src={HTML} alt="ikonka HTML" className=" m-2" />
             HTML
           </div>
           <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2  ">
-            <img src={SASS} alt="ikonka SASS/SCSS" className="w-[20px] m-2" />
+            <img src={SASS} alt="ikonka SASS/SCSS" className=" m-2" />
             SCSS
           </div>
           <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2  ">
-            <img src={TS} alt="ikonka JavaScript" className="w-[20px] m-2" />
+            <img src={TS} alt="ikonka JavaScript" className=" m-2" />
             TypeScript
           </div>
           <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2 ">inne</div>

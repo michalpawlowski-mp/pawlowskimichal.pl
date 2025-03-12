@@ -31,7 +31,7 @@ const ProjectTwo: React.FC = () => {
             <img src={TS} alt="ikonka JavaScript" className=" m-2" />
             TypeScript
           </div>
-          <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2 ">inne</div>
+          <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-4 ">inne</div>
         </div>
         <button onClick={toggleVisibility} className="mt-4 py-2 px-5 bg-black/50 text-white rounded-full">
           Zobacz szczegóły

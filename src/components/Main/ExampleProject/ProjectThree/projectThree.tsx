@@ -25,14 +25,14 @@ const ProjectThree: React.FC = () => {
             HTML
           </div>
           <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2 ">
-            <img src={LESS} alt="ikonka LESS" className=" mx-2 my-3" />
+            <img src={LESS} alt="ikonka LESS" className=" m-2" />
             LESS
           </div>
           <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2 ">
             <img src={JS} alt="ikonka JavaScript" className="rounded-sm m-2" />
             JavaScript
           </div>
-          <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-2 ">inne</div>
+          <div className="w-[120px] bg-black/50 rounded-full flex items-center justify-center m-1 p-4 ">inne</div>
         </div>
         <button onClick={toggleVisibility} className="mt-4 py-2 px-5 bg-black/50 text-white rounded-full">
           Zobacz szczegóły

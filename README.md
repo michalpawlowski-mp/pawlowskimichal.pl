@@ -44,5 +44,5 @@ yarn build  # lub npm run build
 
 
 ---
-💡 Stworzony przez [Michał Pawłowski Linkedin](https://www.linkedin.com/in/michalpawlowski-mp/)
+💡 Stworzony przez [Michał Pawłowski (Linkedin)](https://www.linkedin.com/in/michalpawlowski-mp/)
 

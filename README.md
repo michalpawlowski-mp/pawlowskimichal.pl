@@ -9,7 +9,7 @@
 Twój projekt to aplikacja stworzona w **Vite + React + TypeScript + Tailwind CSS**. Krótki opis funkcjonalności projektu.
 
 ## 🌐 Demo
-🔗 [Zobacz stronę]([https://twojadomena.pl](https://pawlowskimichal.pl/))
+🔗 [Zobacz stronę](https://twojadomena.pl](https://pawlowskimichal.pl/)
 
 
 

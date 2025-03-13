@@ -16,7 +16,7 @@ Twój projekt to aplikacja stworzona w **Vite + React + TypeScript + Tailwind CS
 ## 🚀 Uruchamianie projektu
 ### 1️⃣ Klonowanie repozytorium
 ```bash
-git clone [https://github.com/twoj-user/twoje-repo.git](https://github.com/michalpawlowski-mp/pawlowskimichal.pl)
+git clone https://github.com/michalpawlowski-mp/pawlowskimichal.pl
 cd pawlowskimichal.pl
 ```
 

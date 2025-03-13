@@ -1,4 +1,4 @@
-# Projekt: Nazwa Twojego Projektu
+# Projekt: pawlowskimichal.pl
 
 ![Vite](https://img.shields.io/badge/Vite-4B0082?style=for-the-badge&logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -9,7 +9,7 @@
 Twój projekt to aplikacja stworzona w **Vite + React + TypeScript + Tailwind CSS**. Krótki opis funkcjonalności projektu.
 
 ## 🌐 Demo
-🔗 [Zobacz stronę](https://twojadomena.pl](https://pawlowskimichal.pl/)
+🔗 [Zobacz na żywo](https://pawlowskimichal.pl/)
 
 
 
@@ -40,4 +40,3 @@ Aplikacja powinna być dostępna pod adresem `http://localhost:5173/`
 
 ---
 💡 Stworzony przez [Michał Pawłowski (Linkedin)](https://www.linkedin.com/in/michalpawlowski-mp/)
-

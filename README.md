@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Projekt: Nazwa Twojego Projektu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Vite](https://img.shields.io/badge/Vite-4B0082?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Currently, two official plugins are available:
+## 📌 Opis projektu
+Twój projekt to aplikacja stworzona w **Vite + React + TypeScript + Tailwind CSS**. Krótki opis funkcjonalności projektu.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Demo
+🔗 [Zobacz stronę]([https://twojadomena.pl](https://pawlowskimichal.pl/))
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Uruchamianie projektu
+### 1️⃣ Klonowanie repozytorium
+```bash
+git clone https://github.com/twoj-user/twoje-repo.git
+cd twoje-repo
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 2️⃣ Instalacja zależności
+```bash
+yarn install  # lub npm install
 ```
+
+### 3️⃣ Uruchomienie projektu
+```bash
+yarn dev  # lub npm run dev
+```
+Aplikacja powinna być dostępna pod adresem `http://localhost:5173/`
+
+## 📦 Budowanie projektu
+```bash
+yarn build  # lub npm run build
+```
+
+## 🛠 Technologie
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+
+---
+💡 Stworzony przez [Michał Pawłowski Linkedin](https://www.linkedin.com/in/michalpawlowski-mp/)
+

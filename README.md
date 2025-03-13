@@ -31,11 +31,6 @@ yarn dev  # lub npm run dev
 ```
 Aplikacja powinna być dostępna pod adresem `http://localhost:5173/`
 
-## 📦 Budowanie projektu
-```bash
-yarn build  # lub npm run build
-```
-
 ## 🛠 Technologie
 - [Vite](https://vitejs.dev/)
 - [React](https://reactjs.org/)

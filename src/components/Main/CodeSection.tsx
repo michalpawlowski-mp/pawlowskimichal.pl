@@ -2,7 +2,7 @@ const CodeSection: React.FC = () => {
   return (
     <>
       <div className="flex items-center justify-center w-full md:w-1/2">
-        <div className="bg-gray-800 text-gray-300 font-mono overflow-hidden rounded-lg shadow-lg w-max">
+        <div className="bg-gray-800 text-gray-300 font-mono overflow-hidden rounded-lg shadow-lg w-full">
           <div className="w-full pl-1 h-max bg-gray-700 items-center flex ">
             <div className="bg-rose-700 w-[10px] h-[10px] rounded-full justify-start m-1"></div>
             <div className="bg-amber-500 w-[10px] h-[10px] rounded-full justify-start m-1"></div>

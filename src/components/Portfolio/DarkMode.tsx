@@ -18,10 +18,18 @@ const DarkMode: React.FC = () => {
           <img src={JQ} alt="ikonka JavaScript" className="w-[20px] m-2" />
         </div>
         <div className="flex justify-center w-full">
-          <a href="https://github.com/michalpawlowski-mp/DarkMode" target="_blank" className="hover:bg-white/20 w-1/2 border-r-2 flex items-center justify-center">
+          <a
+            href="https://github.com/michalpawlowski-mp/DarkMode"
+            target="_blank"
+            className="hover:bg-white/20 w-1/2 border-r-2 flex items-center justify-center"
+          >
             <img src={github} alt=" link do GitHub" className="w-6 h-6 m-2 invert" />
           </a>
-          <a href="https://michalpawlowski-mp.github.io/DarkMode/" target="_blank" className="hover:bg-white/20 w-1/2 flex items-center justify-center">
+          <a
+            href="https://michalpawlowski-mp.github.io/DarkMode/"
+            target="_blank"
+            className="hover:bg-white/20 w-1/2 flex items-center justify-center"
+          >
             <img src={web} alt="link do strony" className="w-6 h-6 m-2 invert" />
           </a>
         </div>

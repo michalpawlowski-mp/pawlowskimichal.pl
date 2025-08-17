@@ -2,7 +2,7 @@ const IntroSection: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center mb-5 w-full md:w-1/2">
       {/* <h2 className="text-6xl my-10">Frontend Developer</h2> */}
-      <div className="bg-gray-800 text-gray-300 font-mono overflow-hidden rounded-lg shadow-lg w-full">
+      <div className="bg-gray-800 text-gray-300 font-mono overflow-hidden rounded-lg shadow-lg md:w-max w-full">
         <div className="w-full pl-1 h-max bg-gray-700 items-center flex">
           <div className="bg-rose-700 w-[10px] h-[10px] rounded-full justify-start m-1"></div>
           <div className="bg-amber-500 w-[10px] h-[10px] rounded-full justify-start m-1"></div>

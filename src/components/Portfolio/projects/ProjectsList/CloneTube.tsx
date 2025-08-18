@@ -25,7 +25,7 @@ const Weather: React.FC = () => {
         </div>
         <div className="flex justify-center w-full">
           <a
-            href={"https://github.com/michalpawlowski-mp/WeatherApp"}
+            href={"https://github.com/michalpawlowski-mp/CloneTube"}
             target="_blank"
             className="hover:bg-white/20 w-1/2 border-r-2 flex items-center justify-center"
           >
@@ -36,7 +36,9 @@ const Weather: React.FC = () => {
             />
           </a>
           <a
-            href={"https://michalpawlowski-mp.github.io/WeatherApp/"}
+            href={
+              "https://clone-tube-git-master-mpdevs-projects-7d104caf.vercel.app/"
+            }
             target="_blank"
             className="hover:bg-white/20 w-1/2 flex items-center justify-center"
           >

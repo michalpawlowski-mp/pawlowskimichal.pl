@@ -83,6 +83,11 @@ const ProjectTwoPanel: React.FC<ProjectTwoProps> = ({ toggleVisibility }) => {
               <img src={TS} alt="ikonka JavaScript" className="w-[20px] m-2" />
               TypeScript
             </div>
+          </div>
+          <div className="flex flex-wrap justify-center">
+            <p className="w-full text-left text-xl">
+              Użyte narzędzia developerskie:
+            </p>
             <div className="w-[150px] p-1 bg-black/50  rounded-full m-1 flex items-center justify-center">
               <img
                 src={npm}

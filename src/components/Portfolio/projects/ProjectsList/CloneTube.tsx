@@ -1,6 +1,6 @@
 import web from "/icons/any/web.svg";
 import github from "/icons/social/github.svg";
-import clonetube from "/any/clonetube.svg";
+import clonetube from "/any/CloneTube/clonetube.svg";
 import react from "/icons/tech/react.svg";
 import tw from "/icons/tech/tailwind.svg";
 import nextjs from "/icons/tech/next.svg";
@@ -36,9 +36,7 @@ const Weather: React.FC = () => {
             />
           </a>
           <a
-            href={
-              "https://clone-tube-git-master-mpdevs-projects-7d104caf.vercel.app/"
-            }
+            href={"https://clone-tube-ecru.vercel.app/"}
             target="_blank"
             className="hover:bg-white/20 w-1/2 flex items-center justify-center"
           >

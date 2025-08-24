@@ -1,5 +1,5 @@
 import web from "/icons/any/web.svg";
-import gaminghub from "/any/GamingHub/gaminghub-game.svg";
+import gaminghub from "/any/gaminghub.svg";
 import github from "/icons/social/github.svg";
 import HTML from "/icons/tech/html.svg";
 import CSS from "/icons/tech/css.svg";
@@ -28,22 +28,14 @@ const GamingHub: React.FC = () => {
             target="_blank"
             className="hover:bg-white/20 w-1/2 border-r-2 flex items-center justify-center"
           >
-            <img
-              src={github}
-              alt=" link do GitHub"
-              className="w-6 h-6 m-2 invert"
-            />
+            <img src={github} alt=" link do GitHub" className="w-6 h-6 m-2 invert" />
           </a>
           <a
             href={"https://michalpawlowski-mp.github.io/GamingHub/"}
             target="_blank"
             className="hover:bg-white/20 w-1/2 flex items-center justify-center"
           >
-            <img
-              src={web}
-              alt="link do strony"
-              className="w-6 h-6 m-2 invert"
-            />
+            <img src={web} alt="link do strony" className="w-6 h-6 m-2 invert" />
           </a>
         </div>
       </div>

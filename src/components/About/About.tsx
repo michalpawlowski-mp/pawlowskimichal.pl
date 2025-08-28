@@ -1,5 +1,5 @@
 import Banner from "./Banner";
-import Skills from "./Skills";
+import Skills from "./Skills/Skills";
 import Description from "./Description";
 import Certificates from "./Certificates";
 import Carrier from "./Carrier";

@@ -1,11 +1,7 @@
-import web from "/icons/any/web.svg";
-import github from "/icons/social/github.svg";
-import clonetube from "/any/CloneTube/clonetube.svg";
-import react from "/icons/tech/react.svg";
-import tw from "/icons/tech/tailwind.svg";
-import nextjs from "/icons/tech/next.svg";
+import { clonetube, react, tw, next } from "../../../../assets/index";
+import LinkPanel from "./LinkPanel/LinkPanel";
 
-const Weather: React.FC = () => {
+const CloneTube: React.FC = () => {
   return (
     <>
       <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
@@ -14,42 +10,21 @@ const Weather: React.FC = () => {
         </p>
         <img src={clonetube} alt="Podglad strony kólko i krzyżyk" />
         <div className="flex justify-center w-full items-center border-t-2 border-b-2 border-white">
-          {/* <p className="text-xl">Użyte technologie :</p> */}
-          <img src={react} alt="ikonka HTML" className="w-[20px] m-2" />
-          <img src={tw} alt="ikonka LESS" className="w-[20px] m-2" />
+          <img src={react} alt="ikonka react" className="w-[20px] m-2" />
+          <img src={tw} alt="ikonka tailwind" className="w-[20px] m-2" />
           <img
-            src={nextjs}
-            alt="ikonka JavaScript"
+            src={next}
+            alt="ikonka next.js"
             className="w-[20px] m-2 invert"
           />
         </div>
-        <div className="flex justify-center w-full">
-          <a
-            href={"https://github.com/michalpawlowski-mp/CloneTube"}
-            target="_blank"
-            className="hover:bg-white/20 w-1/2 border-r-2 flex items-center justify-center"
-          >
-            <img
-              src={github}
-              alt=" link do GitHub"
-              className="w-6 h-6 m-2 invert"
-            />
-          </a>
-          <a
-            href={"https://clone-tube-ecru.vercel.app/"}
-            target="_blank"
-            className="hover:bg-white/20 w-1/2 flex items-center justify-center"
-          >
-            <img
-              src={web}
-              alt="link do strony"
-              className="w-6 h-6 m-2 invert"
-            />
-          </a>
-        </div>
+        <LinkPanel
+          githubLink="https://github.com/michalpawlowski-mp/CloneTube"
+          websiteLink="https://clone-tube-ecru.vercel.app//"
+        />
       </div>
     </>
   );
 };
 
-export default Weather;
+export default CloneTube;

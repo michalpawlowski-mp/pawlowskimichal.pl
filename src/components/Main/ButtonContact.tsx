@@ -3,14 +3,17 @@ import arrow from "/icons/any/arrow.svg";
 
 const ButtonContact: React.FC = () => {
   return (
-    <>
-      <Link to="/contact" className="">
-        <div className="flex text-center items-center group ">
-          <p className="transition-all duration-500 group-hover:translate-x-1">Kontakt ze mną</p>
-          <img className="invert mx-2 mb-3 transition-transform duration-500 group-hover:translate-x-2" src={arrow} alt="strzałka w prawo" />
-        </div>
-      </Link>
-    </>
+    <Link
+      to="/contact"
+      className="inline-flex items-center gap-2 rounded-2xl bg-gray-600 px-6 py-3 text-white font-medium shadow-lg transition-all duration-300 hover:bg-gray-800 hover:translate-x-1"
+    >
+      <span>Kontakt ze mną</span>
+      <img
+        src={arrow}
+        alt="strzałka w prawo"
+        className="w-5 h-5 invert transition-transform duration-300 group-hover:translate-x-1"
+      />
+    </Link>
   );
 };
 

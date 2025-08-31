@@ -3,9 +3,14 @@ import { web, github, info } from "../../../../../assets/index";
 interface LinkPanelProps {
   githubLink: string;
   websiteLink: string;
+  onInfoClick?: () => void;
 }
 
-const LinkPanel: React.FC<LinkPanelProps> = ({ githubLink, websiteLink }) => {
+const LinkPanel: React.FC<LinkPanelProps> = ({
+  githubLink,
+  websiteLink,
+  onInfoClick,
+}) => {
   return (
     <div className="flex justify-center w-full">
       <a
@@ -30,7 +35,10 @@ const LinkPanel: React.FC<LinkPanelProps> = ({ githubLink, websiteLink }) => {
           className="w-6 h-6 m-2 invert"
         />
       </a>
-      <div className="hover:bg-white/20 w-1/3 border-l-2 flex items-center justify-center">
+      <div
+        onClick={onInfoClick}
+        className="hover:bg-white/20 w-1/3 border-l-2 flex items-center justify-center cursor-pointer"
+      >
         <img src={info} alt="Info" className="w-6 h-6 m-2 invert" />
       </div>
     </div>

@@ -10,6 +10,7 @@ const Portfolio: React.FC = () => {
         <div className="flex items-center justify-center w-full">
           <div className="w-2/5 h-px border-white bg-white rounded-full"></div>
           <a
+            target="_blank"
             href={"https://github.com/michalpawlowski-mp"}
             className="flex items-center p-2 mx-2 rounded-full border border-white hover:bg-white/20"
           >

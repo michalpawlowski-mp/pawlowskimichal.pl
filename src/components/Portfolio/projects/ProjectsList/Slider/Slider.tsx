@@ -1,7 +1,11 @@
-import { slider, html, sass, js } from "../../../../assets/index";
-import LinkPanel from "./LinkPanel/LinkPanel";
+import { slider, html, sass, js } from "../../../../../assets/index";
+import LinkPanel from "../LinkPanel/LinkPanel";
+import SliderPanel from "./SliderPanel";
+
+import { useToggle } from "../../../../../hook/useToggle";
 
 const Slider: React.FC = () => {
+  const { isVisible, toggleVisibility } = useToggle();
   return (
     <>
       <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
@@ -17,7 +21,9 @@ const Slider: React.FC = () => {
         <LinkPanel
           githubLink="https://github.com/michalpawlowski-mp/Slider"
           websiteLink="https://michalpawlowski-mp.github.io/Slider/"
+          onInfoClick={toggleVisibility}
         />
+        {isVisible && <SliderPanel toggleVisibility={toggleVisibility} />}
       </div>
     </>
   );

@@ -1,5 +1,5 @@
-import { cv, vite, sass, js, bs, react } from "../../../../assets/index";
-import LinkPanel from "./LinkPanel/LinkPanel";
+import { cv, vite, sass, js, bs, react } from "../../../../../assets/index";
+import LinkPanel from "../LinkPanel/LinkPanel";
 
 const CV: React.FC = () => {
   return (

@@ -1,12 +1,8 @@
-import React, { useState } from "react";
-import ProjectOnePanel from "./projectOnePanel";
+import { useToggle } from "../../../../hook/useToggle";
+import CloneTubePanel from "../../../Portfolio/projects/ProjectsList/CloneTube/CloneTubePanel";
 
 const ProjectOne: React.FC = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(false);
-
-  const toggleVisibility: () => void = () => {
-    setIsVisible((prev) => !prev);
-  };
+  const { isVisible, toggleVisibility } = useToggle();
 
   return (
     <>
@@ -27,7 +23,7 @@ const ProjectOne: React.FC = () => {
           Zobacz szczegóły
         </button>
       </div>
-      {isVisible && <ProjectOnePanel toggleVisibility={toggleVisibility} />}
+      {isVisible && <CloneTubePanel toggleVisibility={toggleVisibility} />}
     </>
   );
 };

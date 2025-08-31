@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-export const useToggle = (initialState: boolean = false): [boolean, () => void] => {
-  const [state, setState] = useState<boolean>(initialState);
+export function useToggle(initialValue: boolean = false) {
+  const [isVisible, setIsVisible] = useState<boolean>(initialValue);
 
-  const toggle = () => {
-    setState((prev) => !prev);
+  const toggleVisibility = () => {
+    setIsVisible((prev) => !prev);
   };
 
-  return [state, toggle];
-};
+  return { isVisible, toggleVisibility, setIsVisible };
+}

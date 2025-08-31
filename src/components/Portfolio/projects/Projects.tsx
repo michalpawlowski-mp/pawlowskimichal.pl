@@ -1,12 +1,12 @@
 import { useState } from "react";
-import GamingHub from "./ProjectsList/Gaminghub";
-import Slider from "./ProjectsList/Slider.tsx";
-import CV from "./ProjectsList/CV";
-import XO from "./ProjectsList/XO";
-import Weather from "./ProjectsList/Weather";
-import Cal from "./ProjectsList/Calc";
-import Todo from "./ProjectsList/Todo";
-import CloneTube from "./ProjectsList/CloneTube";
+import GamingHub from "./ProjectsList/GammingHub/Gaminghub";
+import Slider from "./ProjectsList/Slider/Slider.tsx";
+import CV from "./ProjectsList/CV/CV";
+import XO from "./ProjectsList/XO/XO";
+import Weather from "./ProjectsList/Weather/Weather.tsx";
+import Cal from "./ProjectsList/Calculator/Calc";
+import Todo from "./ProjectsList/ToDoList/Todo";
+import CloneTube from "./ProjectsList/CloneTube/CloneTube.tsx";
 
 const allProjects = [
   <CloneTube key="clonetube" />,

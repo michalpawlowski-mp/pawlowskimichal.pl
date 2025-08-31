@@ -1,12 +1,8 @@
-import React, { useState } from "react";
-import ProjectTwoPanel from "./projectTwoPanel";
+import { useToggle } from "../../../../hook/useToggle";
+import XoPanel from "../../../Portfolio/projects/ProjectsList/XO/xoPanel";
 
 const ProjectTwo: React.FC = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(false);
-
-  const toggleVisibility: () => void = () => {
-    setIsVisible((prev) => !prev);
-  };
+  const { isVisible, toggleVisibility } = useToggle();
 
   return (
     <>
@@ -25,7 +21,7 @@ const ProjectTwo: React.FC = () => {
           Zobacz szczegóły
         </button>
       </div>
-      {isVisible && <ProjectTwoPanel toggleVisibility={toggleVisibility} />}
+      {isVisible && <XoPanel toggleVisibility={toggleVisibility} />}
     </>
   );
 };

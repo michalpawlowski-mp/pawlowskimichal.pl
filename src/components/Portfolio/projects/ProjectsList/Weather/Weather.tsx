@@ -1,7 +1,10 @@
-import { wApp, html, less, js } from "../../../../assets/index";
-import LinkPanel from "./LinkPanel/LinkPanel";
+import { wApp, html, less, js } from "../../../../../assets/index";
+import LinkPanel from "../LinkPanel/LinkPanel";
+import { useToggle } from "../../../../../hook/useToggle";
+import ProjectThreePanel from "./WeatherPanel";
 
 const Weather: React.FC = () => {
+  const { isVisible, toggleVisibility } = useToggle();
   return (
     <>
       <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
@@ -17,7 +20,9 @@ const Weather: React.FC = () => {
         <LinkPanel
           githubLink="https://github.com/michalpawlowski-mp/WeatherApp"
           websiteLink="https://michalpawlowski-mp.github.io/WeatherApp/"
+          onInfoClick={toggleVisibility}
         />
+        {isVisible && <ProjectThreePanel toggleVisibility={toggleVisibility} />}
       </div>
     </>
   );

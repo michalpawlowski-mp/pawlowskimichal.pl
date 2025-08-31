@@ -1,5 +1,6 @@
 import me from "/any/mypicture/me-a.svg";
 import { Link } from "react-router-dom";
+import arrow from "/icons/any/arrow.svg";
 
 const AboutSection: React.FC = () => {
   return (
@@ -17,14 +18,19 @@ const AboutSection: React.FC = () => {
         </div>
         <div className="flex flex-col items-center">
           <p className="text-xl text-center mb-2">Więcej o mnie</p>
-          <p className="text-sm text-center">
+          <p className="text-sm text-center ">
             Przejdz do zakładki "O mnie" aby dowiedzieć się więcej
           </p>
           <Link
             to="/about"
-            className="p-2 px-4 m-2 text-center bg-slate-700 hover:bg-slate-600 rounded-full"
+            className="inline-flex items-center gap-2 mt-2 rounded-2xl bg-slate-700 px-6 py-2 text-white font-medium shadow-lg transition-all duration-300 hover:bg-gray-800 hover:translate-x-1"
           >
-            O mnie
+            <span>Więcej o mnie</span>
+            <img
+              src={arrow}
+              alt="strzałka w prawo"
+              className="w-5 h-5 invert transition-transform duration-300 group-hover:translate-x-1"
+            />
           </Link>
         </div>
       </div>

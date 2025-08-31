@@ -1,13 +1,8 @@
-import React, { useState } from "react";
-import ProjectThreePanel from "./projectThreePanel";
+import { useToggle } from "../../../../hook/useToggle";
+import WeatherPanel from "../../../Portfolio/projects/ProjectsList/Weather/WeatherPanel";
 
 const ProjectThree: React.FC = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(false);
-
-  const toggleVisibility: () => void = () => {
-    setIsVisible((prev) => !prev);
-  };
-
+  const { isVisible, toggleVisibility } = useToggle();
   return (
     <>
       <div className="flex flex-col text-center justify-between items-center w-full md:w-1/3 bg-gray-700/50 p-4 md:mx-2 my-2 rounded-xl shadow-inner shadow-black">
@@ -26,7 +21,7 @@ const ProjectThree: React.FC = () => {
           Zobacz szczegóły
         </button>
       </div>
-      {isVisible && <ProjectThreePanel toggleVisibility={toggleVisibility} />}
+      {isVisible && <WeatherPanel toggleVisibility={toggleVisibility} />}
     </>
   );
 };

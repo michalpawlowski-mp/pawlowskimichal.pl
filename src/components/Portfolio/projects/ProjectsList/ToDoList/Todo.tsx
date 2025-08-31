@@ -1,5 +1,5 @@
-import { todo, html, css, js } from "../../../../assets/index";
-import LinkPanel from "./LinkPanel/LinkPanel";
+import { todo, html, css, js } from "../../../../../assets/index";
+import LinkPanel from "../LinkPanel/LinkPanel";
 
 const Todo: React.FC = () => {
   return (
@@ -15,8 +15,8 @@ const Todo: React.FC = () => {
           <img src={js} alt="ikonka JavaScript" className="w-[20px] m-2" />
         </div>
         <LinkPanel
-          githubLink="https://github.com/michalpawlowski-mp/Calculator"
-          websiteLink="https://michalpawlowski-mp.github.io/Calculator/"
+          githubLink="https://github.com/michalpawlowski-mp/To-Do-List"
+          websiteLink="https://michalpawlowski-mp.github.io/To-Do-List/"
         />
       </div>
     </>

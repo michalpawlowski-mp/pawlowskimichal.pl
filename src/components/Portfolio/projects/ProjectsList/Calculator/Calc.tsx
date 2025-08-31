@@ -1,5 +1,5 @@
-import { html, cal, css, js } from "../../../../assets/index";
-import LinkPanel from "./LinkPanel/LinkPanel";
+import { html, cal, css, js } from "../../../../../assets/index";
+import LinkPanel from "../LinkPanel/LinkPanel";
 
 const Calc: React.FC = () => {
   return (

@@ -1,7 +1,11 @@
-import { xo, html, css, ts } from "../../../../assets/index";
-import LinkPanel from "./LinkPanel/LinkPanel";
+import { xo, html, css, ts } from "../../../../../assets/index";
+import LinkPanel from "../LinkPanel/LinkPanel";
+
+import { useToggle } from "../../../../../hook/useToggle";
+import XoPanel from "./xoPanel";
 
 const XO: React.FC = () => {
+  const { isVisible, toggleVisibility } = useToggle();
   return (
     <>
       <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
@@ -17,7 +21,9 @@ const XO: React.FC = () => {
         <LinkPanel
           githubLink="https://github.com/michalpawlowski-mp/X-O"
           websiteLink="https://michalpawlowski-mp.github.io/X-O/"
+          onInfoClick={toggleVisibility}
         />
+        {isVisible && <XoPanel toggleVisibility={toggleVisibility} />}
       </div>
     </>
   );

@@ -7,6 +7,7 @@ import Weather from "./ProjectsList/Weather/Weather.tsx";
 import Cal from "./ProjectsList/Calculator/Calc";
 import Todo from "./ProjectsList/ToDoList/Todo";
 import CloneTube from "./ProjectsList/CloneTube/CloneTube.tsx";
+import MoreProject from "./MoreProject/MoreProject.tsx";
 
 const allProjects = [
   <CloneTube key="clonetube" />,
@@ -17,6 +18,7 @@ const allProjects = [
   <Todo key="todo" />,
   <CV key="cv" />,
   <Slider key="slider" />,
+  <MoreProject key="moreproject" />,
 ];
 
 const ProjectsList: React.FC = () => {
@@ -28,22 +30,12 @@ const ProjectsList: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full m-1">
-      <div className="flex flex-wrap justify-center gap-4">
-        {allProjects.slice(0, visibleCount)}
-      </div>
+      <div className="flex flex-wrap justify-center gap-4">{allProjects.slice(0, visibleCount)}</div>
 
       {visibleCount < allProjects.length && (
-        <button
-          type="button"
-          className="w-full flex justify-center mb-5"
-          onClick={handleShowMore}
-        >
+        <button type="button" className="w-full flex justify-center mb-5" onClick={handleShowMore}>
           Zobacz więcej
-          <img
-            src="/icons/any/arrow2.svg"
-            alt=""
-            className="-rotate-90 invert ms-1"
-          />
+          <img src="/icons/any/arrow2.svg" alt="" className="-rotate-90 invert ms-1" />
         </button>
       )}
     </div>

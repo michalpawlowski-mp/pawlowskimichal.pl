@@ -6,7 +6,9 @@ import xo from "/any/projects/XO/kik.svg";
 import xor from "/any/projects/XO/kik-r.svg";
 import cal from "/any/projects/cal.svg";
 import cv from "/any/projects/cv.svg";
-import gaminghub from "/any/projects/gaminghub.svg";
+import gaminghub from "/any/projects/GamingHub/gaminghub.svg";
+import gaminghubshop from "/any/projects/GamingHub/gaminghubshop.svg";
+import gaminghubart from "/any/projects/GamingHub/gaminghubart.svg";
 import slider from "/any/projects/slider.svg";
 import todo from "/any/projects/todolist.svg";
 
@@ -20,6 +22,8 @@ export {
   cal,
   cv,
   gaminghub,
+  gaminghubshop,
+  gaminghubart,
   slider,
   todo,
 };

@@ -1,8 +1,7 @@
 import { clonetube, react, tw, next } from "../../../../../assets/index";
-import LinkPanel from "../LinkPanel/LinkPanel";
+import Links from "../../Link/Links";
 import { useToggle } from "../../../../../hook/useToggle";
-
-import ProjectOnePanel from "./CloneTubePanel";
+import CloneTubePanel from "./CloneTubePanel";
 
 const CloneTube: React.FC = () => {
   const { isVisible, toggleVisibility } = useToggle();
@@ -22,12 +21,12 @@ const CloneTube: React.FC = () => {
             className="w-[20px] m-2 invert"
           />
         </div>
-        <LinkPanel
+        <Links
           githubLink="https://github.com/michalpawlowski-mp/CloneTube"
           websiteLink="https://clone-tube-ecru.vercel.app//"
           onInfoClick={toggleVisibility}
         />
-        {isVisible && <ProjectOnePanel toggleVisibility={toggleVisibility} />}
+        {isVisible && <CloneTubePanel toggleVisibility={toggleVisibility} />}
       </div>
     </>
   );

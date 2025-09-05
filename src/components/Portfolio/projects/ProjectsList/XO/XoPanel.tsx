@@ -4,10 +4,9 @@ import TS from "/icons/tech/ts.svg";
 import SASS from "/icons/tech/sass.svg";
 import npm from "/icons/tech/npm.svg";
 import node from "/icons/tech/node.svg";
-import web from "/icons/any/web.svg";
-import github from "/icons/social/github.svg";
 import xo from "/any/projects/XO/kik.svg";
 import xor from "/any/projects/XO/kik-r.svg";
+import LinksPanel from "../../Link/LinksPanel";
 
 interface XoProps {
   toggleVisibility: () => void;
@@ -105,32 +104,10 @@ const XoPanel: React.FC<XoProps> = ({ toggleVisibility }) => {
               Node.js
             </div>
           </div>
-          <div className="flex">
-            <a
-              target="_blank"
-              href={"https://michalpawlowski-mp.github.io/X-O/"}
-              className=" flex items-center mt-4 mx-1 py-2 px-5 w-1/2 bg-black/50 text-white rounded-full"
-            >
-              <img
-                src={web}
-                alt="zobacz projektu w praktyce"
-                className="m-auto invert w-[25px]"
-              />
-              <p className="m-auto">Zobacz projekt</p>
-            </a>
-            <a
-              target="_blank"
-              href={"https://github.com/michalpawlowski-mp/X-O"}
-              className="flex items-center mt-4 mx-1 py-2 px-5 w-1/2 bg-black/50 text-white rounded-full"
-            >
-              <img
-                src={github}
-                alt="zobacz kod projektu"
-                className="m-auto invert w-[25px]"
-              />
-              <p className="m-auto">Zobacz kod</p>
-            </a>
-          </div>
+          <LinksPanel
+            githubLink="https://github.com/michalpawlowski-mp/X-O"
+            websiteLink="https://michalpawlowski-mp.github.io/X-O/"
+          />
         </div>
       </div>
     </div>

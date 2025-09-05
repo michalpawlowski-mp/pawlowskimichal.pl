@@ -1,12 +1,12 @@
-import { web, github, info } from "../../../../../assets/index";
+import { web, github, info } from "../../../../assets/index";
 
-interface LinkPanelProps {
+interface LinksProps {
   githubLink: string;
   websiteLink: string;
   onInfoClick?: () => void;
 }
 
-const LinkPanel: React.FC<LinkPanelProps> = ({
+const Links: React.FC<LinksProps> = ({
   githubLink,
   websiteLink,
   onInfoClick,
@@ -45,4 +45,4 @@ const LinkPanel: React.FC<LinkPanelProps> = ({
   );
 };
 
-export default LinkPanel;
+export default Links;

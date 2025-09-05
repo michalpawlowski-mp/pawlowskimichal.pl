@@ -1,10 +1,10 @@
 import React from "react";
-import sliderImg from "/any/projects/slider.svg";
+import cal from "/any/projects/cal.svg";
 import { html, js, sass, npm, node } from "../../../../../assets/index";
 import LinksPanel from "../../Link/LinksPanel";
 import ProjectsProps from "../../../../../types/ProjectsProps";
 
-const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
+const CalcPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-40 items-center backdrop-blur-sm">
       <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-max h-5/6 overflow-auto">
@@ -16,44 +16,42 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
           >
             Zamknij
           </button>
-          <h5 className="text-2xl text-center m-auto">Projekt: Slider</h5>
+          <h5 className="text-2xl text-center m-auto">Kalkulator</h5>
         </div>
 
         {/* Funkcjonalności */}
         <div className="flex flex-col text-left p-2 my-3">
           <p className="text-xl">Funkcjonalności:</p>
-          <p className="text-sm mt-1">✅ Przeglądanie zdjęć w trybie slidera</p>
-          <p className="text-sm mt-1">✅ Nawigacja strzałkami (lewo / prawo)</p>
+          <p className="text-sm mt-1">✅ Podstawowe operacje (+, -, *, /)</p>
+          <p className="text-sm mt-1">✅ Operacje specjalne (%, √, x²)</p>
+          <p className="text-sm mt-1">✅ Przycisk cofania (`undo`)</p>
+          <p className="text-sm mt-1">✅ Przycisk czyszczenia (`clear all`)</p>
           <p className="text-sm mt-1">
-            ✅ Zmiana slajdu poprzez kliknięcie w kropki (nawigacja dolna)
+            ✅ Obsługa liczb dziesiętnych i ujemnych
           </p>
-          <p className="text-sm mt-1">
-            ✅ Aktywny slajd podświetlany klasą <code>.active</code>
-          </p>
-          <p className="text-sm mt-1">✅ Obsługa pętli (ostatni → pierwszy)</p>
+          <p className="text-sm mt-1">✅ Zapisywanie stanu w localStorage</p>
         </div>
 
         {/* Opis */}
         <div className="flex flex-col text-left">
           <p className="text-xl">Opis</p>
           <p className="text-sm mt-2">
-            Projekt przedstawia prosty **slider zdjęć** zbudowany w czystym
-            JavaScripcie, HTML i SCSS. Użytkownik może zmieniać zdjęcia za
-            pomocą strzałek lub nawigacyjnych kropek. Struktura opiera się na
-            prostych klasach CSS, a skrypt obsługuje logikę zmiany aktywnego
-            slajdu.
+            Projekt przedstawia prosty **kalkulator** zbudowany w czystym
+            JavaScript, HTML i SCSS. Aplikacja pozwala na wykonywanie
+            podstawowych i specjalnych operacji matematycznych. Stan kalkulatora
+            jest zapisywany w pamięci przeglądarki (`localStorage`), dzięki
+            czemu po odświeżeniu strony sesja zostaje przywrócona.
           </p>
           <p className="text-sm my-2">
-            Projekt jest responsywny i zoptymalizowany do działania w
-            przeglądarce bez dodatkowych bibliotek.
+            Interfejs użytkownika jest responsywny i czytelny.
           </p>
         </div>
 
         {/* Screenshots */}
         <div className="flex items-center w-full mt-1">
           <img
-            src={sliderImg}
-            alt="Zrzut ekranu slidera"
+            src={cal}
+            alt="Zrzut ekranu kalkulatora"
             className="w-1/2 rounded-xl shadow-md shadow-black"
           />
         </div>
@@ -91,8 +89,8 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
             </div>
           </div>
           <LinksPanel
-            githubLink="https://github.com/michalpawlowski-mp/Slider"
-            websiteLink="https://michalpawlowski-mp.github.io/Slider/"
+            githubLink="https://github.com/michalpawlowski-mp/Calculator"
+            websiteLink="https://michalpawlowski-mp.github.io/Calculator/"
           />
         </div>
       </div>
@@ -100,4 +98,4 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
   );
 };
 
-export default SliderPanel;
+export default CalcPanel;

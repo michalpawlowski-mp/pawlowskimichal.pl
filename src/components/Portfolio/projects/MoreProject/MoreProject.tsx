@@ -1,4 +1,4 @@
-import Github from "./Github/github";
+import Github from "./Github/Github";
 import Experiments from "./Experiments/Experiments";
 
 const MoreProject = () => {

@@ -1,5 +1,5 @@
 import { wApp, html, less, js } from "../../../../../assets/index";
-import LinkPanel from "../LinkPanel/LinkPanel";
+import Links from "../../Link/Links";
 import { useToggle } from "../../../../../hook/useToggle";
 import ProjectThreePanel from "./WeatherPanel";
 
@@ -17,9 +17,9 @@ const Weather: React.FC = () => {
           <img src={less} alt="ikonka LESS" className="w-[20px] m-2" />
           <img src={js} alt="ikonka JavaScript" className="w-[20px] m-2" />
         </div>
-        <LinkPanel
+        <Links
           githubLink="https://github.com/michalpawlowski-mp/WeatherApp"
-          websiteLink="https://michalpawlowski-mp.github.io/WeatherApp/"
+          websiteLink="https://weather-app-red-delta-87.vercel.app/"
           onInfoClick={toggleVisibility}
         />
         {isVisible && <ProjectThreePanel toggleVisibility={toggleVisibility} />}

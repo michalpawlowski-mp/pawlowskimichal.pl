@@ -1,5 +1,5 @@
 import { slider, html, sass, js } from "../../../../../assets/index";
-import LinkPanel from "../LinkPanel/LinkPanel";
+import Links from "../../Link/Links";
 import SliderPanel from "./SliderPanel";
 
 import { useToggle } from "../../../../../hook/useToggle";
@@ -18,7 +18,7 @@ const Slider: React.FC = () => {
           <img src={sass} alt="ikonka SASS" className="w-[20px] m-2" />
           <img src={js} alt="ikonka JavaScript" className="w-[20px] m-2" />
         </div>
-        <LinkPanel
+        <Links
           githubLink="https://github.com/michalpawlowski-mp/Slider"
           websiteLink="https://michalpawlowski-mp.github.io/Slider/"
           onInfoClick={toggleVisibility}

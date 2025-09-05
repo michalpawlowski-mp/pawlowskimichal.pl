@@ -1,12 +1,9 @@
 import React from "react";
+import LinksPanel from "../../Link/LinksPanel";
+import ProjectsProps from "../../../../../types/ProjectsProps";
+import { gaminghub, gaminghubart, gaminghubshop } from "../../../../../assets";
 
-interface GamingHubPanelProps {
-  toggleVisibility: () => void;
-}
-
-const GamingHubPanel: React.FC<GamingHubPanelProps> = ({
-  toggleVisibility,
-}) => {
+const GamingHubPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-40 backdrop-blur-sm">
       <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-full h-5/6 overflow-auto">
@@ -78,17 +75,17 @@ const GamingHubPanel: React.FC<GamingHubPanelProps> = ({
             style={{ transform: "translateX(0%)" }}
           >
             <img
-              src="/any/GamingHub/gaminghub-game.svg"
+              src={gaminghub}
               alt="slide 0"
               className="w-full flex-shrink-0"
             />
             <img
-              src="/any/GamingHub/gaminghub-any.svg"
+              src={gaminghubart}
               alt="slide 1"
               className="w-full flex-shrink-0"
             />
             <img
-              src="/any/GamingHub/gaminghub-akt.svg"
+              src={gaminghubshop}
               alt="slide 2"
               className="w-full flex-shrink-0"
             />
@@ -133,33 +130,10 @@ const GamingHubPanel: React.FC<GamingHubPanelProps> = ({
             JavaScript
           </div>
         </div>
-
-        <div className="flex">
-          <a
-            target="_blank"
-            href={"https://michalpawlowski-mp.github.io/GamingHub/"}
-            className="flex items-center mt-4 mx-1 py-2 px-5 w-1/2 bg-black/50 text-white rounded-full"
-          >
-            <img
-              src="/icons/any/web.svg"
-              alt="zobacz projektu w praktyce"
-              className="m-auto invert w-[25px]"
-            />
-            <p className="m-auto">Zobacz projekt</p>
-          </a>
-          <a
-            target="_blank"
-            href={"https://github.com/michalpawlowski-mp/GamingHub"}
-            className="flex items-center mt-4 mx-1 py-2 px-5 w-1/2 bg-black/50 text-white rounded-full"
-          >
-            <img
-              src="/icons/social/github.svg"
-              alt="zobacz kod projektu"
-              className="m-auto invert w-[25px]"
-            />
-            <p className="m-auto">Zobacz kod</p>
-          </a>
-        </div>
+        <LinksPanel
+          githubLink="https://github.com/michalpawlowski-mp/GamingHub"
+          websiteLink="https://michalpawlowski-mp.github.io/GamingHub/"
+        />
       </div>
     </div>
   );

@@ -9,9 +9,14 @@ const SocialMedia: React.FC = () => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center p-1 m-1 rounded-full border border-white hover:bg-white/20"
+            className="flex items-center p-1 mx-1 rounded-full border border-white hover:bg-white/20"
           >
-            <img className="invert rounded-full" src={icon} alt={alt} width={"25px"} />
+            <img
+              className="invert rounded-full"
+              src={icon}
+              alt={alt}
+              width={"25px"}
+            />
           </a>
         </li>
       ))}

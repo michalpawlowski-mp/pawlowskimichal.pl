@@ -1,10 +1,10 @@
 import React from "react";
-import sliderImg from "/any/projects/slider.svg";
-import { html, js, sass, npm, node } from "../../../../../assets/index";
+import todoListImg from "/any/projects/todolist.svg";
+import { html, js, css, npm, node } from "../../../../../assets/index";
 import LinksPanel from "../../Link/LinksPanel";
 import ProjectsProps from "../../../../../types/ProjectsProps";
 
-const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
+const TodoListPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-40 items-center backdrop-blur-sm">
       <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-max h-5/6 overflow-auto">
@@ -16,44 +16,41 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
           >
             Zamknij
           </button>
-          <h5 className="text-2xl text-center m-auto">Projekt: Slider</h5>
+          <h5 className="text-2xl text-center m-auto">Projekt: Lista zadań</h5>
         </div>
 
         {/* Funkcjonalności */}
         <div className="flex flex-col text-left p-2 my-3">
           <p className="text-xl">Funkcjonalności:</p>
-          <p className="text-sm mt-1">✅ Przeglądanie zdjęć w trybie slidera</p>
-          <p className="text-sm mt-1">✅ Nawigacja strzałkami (lewo / prawo)</p>
-          <p className="text-sm mt-1">
-            ✅ Zmiana slajdu poprzez kliknięcie w kropki (nawigacja dolna)
-          </p>
-          <p className="text-sm mt-1">
-            ✅ Aktywny slajd podświetlany klasą <code>.active</code>
-          </p>
-          <p className="text-sm mt-1">✅ Obsługa pętli (ostatni → pierwszy)</p>
+          <p className="text-sm mt-1">✅ Dodawanie nowych zadań</p>
+          <p className="text-sm mt-1">✅ Edytowanie istniejących zadań</p>
+          <p className="text-sm mt-1">✅ Usuwanie zadań</p>
+          <p className="text-sm mt-1">✅ Oznaczanie zadań jako ukończone</p>
+          <p className="text-sm mt-1">✅ Zapisywanie stanu w localStorage</p>
         </div>
 
         {/* Opis */}
         <div className="flex flex-col text-left">
           <p className="text-xl">Opis</p>
           <p className="text-sm mt-2">
-            Projekt przedstawia prosty **slider zdjęć** zbudowany w czystym
-            JavaScripcie, HTML i SCSS. Użytkownik może zmieniać zdjęcia za
-            pomocą strzałek lub nawigacyjnych kropek. Struktura opiera się na
-            prostych klasach CSS, a skrypt obsługuje logikę zmiany aktywnego
-            slajdu.
+            Projekt to interaktywna **lista zadań** zbudowana w czystym
+            JavaScript, HTML i CSS. Umożliwia użytkownikowi łatwe zarządzanie
+            swoimi zadaniami poprzez dodawanie, edytowanie, usuwanie oraz
+            oznaczanie ich jako ukończone.
           </p>
           <p className="text-sm my-2">
-            Projekt jest responsywny i zoptymalizowany do działania w
-            przeglądarce bez dodatkowych bibliotek.
+            Stan listy jest automatycznie zapisywany w pamięci przeglądarki
+            (`localStorage`), dzięki czemu zadania nie znikają po odświeżeniu
+            strony. Projekt jest prosty, responsywny i działa bez zewnętrznych
+            bibliotek.
           </p>
         </div>
 
         {/* Screenshots */}
         <div className="flex items-center w-full mt-1">
           <img
-            src={sliderImg}
-            alt="Zrzut ekranu slidera"
+            src={todoListImg}
+            alt="Zrzut ekranu listy zadań"
             className="w-1/2 rounded-xl shadow-md shadow-black"
           />
         </div>
@@ -67,8 +64,8 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
               HTML
             </div>
             <div className="w-[125px] bg-black/50 p-1 rounded-full m-1 flex items-center justify-center">
-              <img src={sass} alt="ikonka SASS/SCSS" className="w-[20px] m-2" />
-              SCSS
+              <img src={css} alt="ikonka CSS" className="w-[20px] m-2" />
+              CSS
             </div>
             <div className="w-[125px] bg-black/50 p-1 rounded-full m-1 flex items-center justify-center">
               <img src={js} alt="ikonka JavaScript" className="w-[20px] m-2" />
@@ -91,8 +88,8 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
             </div>
           </div>
           <LinksPanel
-            githubLink="https://github.com/michalpawlowski-mp/Slider"
-            websiteLink="https://michalpawlowski-mp.github.io/Slider/"
+            githubLink="https://github.com/michalpawlowski-mp/todo-list"
+            websiteLink="https://michalpawlowski-mp.github.io/todo-list/"
           />
         </div>
       </div>
@@ -100,4 +97,4 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
   );
 };
 
-export default SliderPanel;
+export default TodoListPanel;

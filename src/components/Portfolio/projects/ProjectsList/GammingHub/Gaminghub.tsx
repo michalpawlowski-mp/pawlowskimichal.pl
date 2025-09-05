@@ -1,5 +1,5 @@
 import { gaminghub, html, css, js } from "../../../../../assets/index";
-import LinkPanel from "../LinkPanel/LinkPanel";
+import Links from "../../Link/Links";
 import GamingHubPanel from "./GammingHubPanel";
 import { useToggle } from "../../../../../hook/useToggle";
 
@@ -19,7 +19,7 @@ const GamingHub: React.FC = () => {
             <img src={js} alt="ikonka JavaScript" className="w-[20px] m-2" />
           </div>
         </div>
-        <LinkPanel
+        <Links
           githubLink="https://github.com/michalpawlowski-mp/GamingHub"
           websiteLink="https://michalpawlowski-mp.github.io/GamingHub/"
           onInfoClick={toggleVisibility}

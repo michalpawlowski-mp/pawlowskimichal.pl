@@ -1,5 +1,5 @@
 import { xo, html, css, ts } from "../../../../../assets/index";
-import LinkPanel from "../LinkPanel/LinkPanel";
+import Links from "../../Link/Links";
 
 import { useToggle } from "../../../../../hook/useToggle";
 import XoPanel from "./xoPanel";
@@ -18,7 +18,7 @@ const XO: React.FC = () => {
           <img src={css} alt="ikonka CSS" className="w-[20px] m-2" />
           <img src={ts} alt="ikonka Typescript" className="w-[20px] m-2" />
         </div>
-        <LinkPanel
+        <Links
           githubLink="https://github.com/michalpawlowski-mp/X-O"
           websiteLink="https://michalpawlowski-mp.github.io/X-O/"
           onInfoClick={toggleVisibility}

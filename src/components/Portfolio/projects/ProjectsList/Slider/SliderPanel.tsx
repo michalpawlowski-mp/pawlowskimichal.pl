@@ -7,13 +7,10 @@ import ProjectsProps from "../../../../../types/ProjectsProps";
 const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center z-40 items-center backdrop-blur-sm">
-      <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-max h-5/6 overflow-auto">
+      <div className="bg-white/10 shadow-inner shadow-black p-2 rounded-2xl mx-2 max-w-3xl w-max h-5/6 overflow-auto scrollbar-none">
         {/* Header */}
         <div className="flex w-full items-center">
-          <button
-            onClick={toggleVisibility}
-            className="p-2 bg-white/10 text-white rounded-xl "
-          >
+          <button onClick={toggleVisibility} className="p-2 bg-white/10 text-white rounded-xl ">
             Zamknij
           </button>
           <h5 className="text-2xl text-center m-auto">Projekt: Slider</h5>
@@ -24,9 +21,7 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
           <p className="text-xl">Funkcjonalności:</p>
           <p className="text-sm mt-1">✅ Przeglądanie zdjęć w trybie slidera</p>
           <p className="text-sm mt-1">✅ Nawigacja strzałkami (lewo / prawo)</p>
-          <p className="text-sm mt-1">
-            ✅ Zmiana slajdu poprzez kliknięcie w kropki (nawigacja dolna)
-          </p>
+          <p className="text-sm mt-1">✅ Zmiana slajdu poprzez kliknięcie w kropki (nawigacja dolna)</p>
           <p className="text-sm mt-1">
             ✅ Aktywny slajd podświetlany klasą <code>.active</code>
           </p>
@@ -37,25 +32,18 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
         <div className="flex flex-col text-left">
           <p className="text-xl">Opis</p>
           <p className="text-sm mt-2">
-            Projekt przedstawia prosty **slider zdjęć** zbudowany w czystym
-            JavaScripcie, HTML i SCSS. Użytkownik może zmieniać zdjęcia za
-            pomocą strzałek lub nawigacyjnych kropek. Struktura opiera się na
-            prostych klasach CSS, a skrypt obsługuje logikę zmiany aktywnego
-            slajdu.
+            Projekt przedstawia prosty **slider zdjęć** zbudowany w czystym JavaScripcie, HTML i SCSS. Użytkownik może
+            zmieniać zdjęcia za pomocą strzałek lub nawigacyjnych kropek. Struktura opiera się na prostych klasach CSS,
+            a skrypt obsługuje logikę zmiany aktywnego slajdu.
           </p>
           <p className="text-sm my-2">
-            Projekt jest responsywny i zoptymalizowany do działania w
-            przeglądarce bez dodatkowych bibliotek.
+            Projekt jest responsywny i zoptymalizowany do działania w przeglądarce bez dodatkowych bibliotek.
           </p>
         </div>
 
         {/* Screenshots */}
-        <div className="flex items-center w-full mt-1">
-          <img
-            src={sliderImg}
-            alt="Zrzut ekranu slidera"
-            className="w-1/2 rounded-xl shadow-md shadow-black"
-          />
+        <div className="flex items-center w-full justify-center mt-1">
+          <img src={sliderImg} alt="Zrzut ekranu slidera" className="rounded-xl shadow-md shadow-black" />
         </div>
 
         {/* Technologie */}
@@ -78,9 +66,7 @@ const SliderPanel: React.FC<ProjectsProps> = ({ toggleVisibility }) => {
 
           {/* Narzędzia developerskie */}
           <div className="flex flex-wrap justify-center">
-            <p className="w-full text-left text-xl">
-              Użyte narzędzia developerskie:
-            </p>
+            <p className="w-full text-left text-xl">Użyte narzędzia developerskie:</p>
             <div className="w-[125px] bg-black/50 p-1 rounded-full m-1 flex items-center justify-center">
               <img src={npm} alt="ikonka npm" className="w-[40px] mx-2" />
               npm

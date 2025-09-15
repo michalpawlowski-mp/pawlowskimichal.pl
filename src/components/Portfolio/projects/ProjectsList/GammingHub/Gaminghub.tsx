@@ -7,7 +7,7 @@ const GamingHub: React.FC = () => {
   const { isVisible, toggleVisibility } = useToggle();
   return (
     <>
-      <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg ">
+      <div className="md:w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-2 shadow-lg">
         <div className="flex w-full justify-center items-center border-b-2 border-white">
           <p className="text-2xl overflow-hidden w-full  p-2">GamingHub</p>
         </div>

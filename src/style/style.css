@@ -118,6 +118,31 @@ h1::after {
   }
 }
 
-::-webkit-scrollbar {
+.scrollbar-none::-webkit-scrollbar {
   display: none;
+}
+
+.scroll-style {
+  --sb-track-color: #757272;
+  --sb-thumb-color: #2b2b2b;
+  --sb-size: 4px;
+}
+
+.scroll-style::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.scroll-style::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+.scroll-style::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .scroll-style {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
 }

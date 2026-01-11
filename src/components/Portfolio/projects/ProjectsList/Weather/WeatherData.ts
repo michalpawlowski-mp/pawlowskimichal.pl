@@ -1,4 +1,3 @@
-import API from "/icons/web/OpenWeather.svg";
 import {
   html,
   less,
@@ -7,7 +6,8 @@ import {
   vercel,
   vite,
   node,
-} from "../../../../../assets/index";
+  API,
+} from "../../../../../assets/imports/index";
 
 export const technologiesData = [
   { src: html, name: "HTML" },

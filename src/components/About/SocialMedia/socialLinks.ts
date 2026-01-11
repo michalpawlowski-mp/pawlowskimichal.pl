@@ -7,7 +7,7 @@ import {
   tiktok,
   threads,
   fb,
-} from "../../../assets/index";
+} from "../../../assets/imports/index";
 
 export type SocialLink = {
   href: string;

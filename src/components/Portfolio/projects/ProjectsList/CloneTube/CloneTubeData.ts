@@ -1,4 +1,3 @@
-import yt from "/icons/web/yt.svg";
 import {
   react,
   next,
@@ -7,7 +6,8 @@ import {
   vercel,
   ts,
   node,
-} from "../../../../../assets/index";
+  yt,
+} from "../../../../../assets/imports/index";
 
 export const technologiesData = [
   { src: react, name: "React" },

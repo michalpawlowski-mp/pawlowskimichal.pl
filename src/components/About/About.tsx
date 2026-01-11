@@ -15,9 +15,9 @@ const About: React.FC = () => {
           <Description />
         </div>
         <div className="flex flex-col w-full justify-center md:flex-row">
-          <Education />
           <Carrier />
           <Certificates />
+          <Education />
         </div>
       </section>
     </>

@@ -29,6 +29,7 @@ const Certificates: React.FC = () => {
               Zamknij
             </button>
             <div className="flex flex-col p-2">
+              <h6 className="text-3xl mb-2">Certyfikaty</h6>
               <ul className="m-2 p-4 bg-black/50 rounded-3xl shadow shadow-white">
                 <li className="text-xs">06.2018</li>
                 <li className="text-sm">

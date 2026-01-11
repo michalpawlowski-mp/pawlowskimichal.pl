@@ -1,4 +1,4 @@
-import { gaminghub, html, css, js } from "../../../../../assets/index";
+import { gaminghub, html, css, js } from "../../../../../assets/imports/index";
 import Links from "../../Link/Links";
 import GamingHubPanel from "./GammingHubPanel";
 import { useToggle } from "../../../../../hook/useToggle";

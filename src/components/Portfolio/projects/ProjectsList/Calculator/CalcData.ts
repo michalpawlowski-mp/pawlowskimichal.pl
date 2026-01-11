@@ -1,4 +1,4 @@
-import { html, js, sass, npm, node } from "../../../../../assets/index";
+import { html, js, sass, npm, node } from "../../../../../assets/imports/index";
 
 export const technologiesData = [
   { src: html, name: "React" },

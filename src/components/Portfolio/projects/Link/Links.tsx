@@ -1,4 +1,4 @@
-import { web, github, info } from "../../../../assets/index";
+import { web, github, info } from "../../../../assets/imports/index";
 
 interface LinksProps {
   githubLink: string;

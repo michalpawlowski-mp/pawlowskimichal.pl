@@ -1,4 +1,4 @@
-import { web, github } from "../../../../assets/index";
+import { web, github } from "../../../../assets/imports/index";
 
 interface LinksPanelProps {
   githubLink: string;

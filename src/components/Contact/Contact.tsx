@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import copy from "/icons/any/copy.svg";
-import Linkedin from "/icons/social/linkedin.svg";
+import { copy, linkedin } from "../../assets/imports";
 
 const Contact: React.FC = () => {
   const [notification, setNotification] = useState<string | null>(null);
@@ -45,7 +44,7 @@ const Contact: React.FC = () => {
         </div>
         <div className="bg-white/20 flex rounded-full justify-center items-center overflow-hidden m-1 hover:bg-white/30 transition duration-300 ease-in-out cursor-pointer">
           <img
-            src={Linkedin}
+            src={linkedin}
             alt="mój profil linkedin"
             className="py-3 pl-2 invert "
           />

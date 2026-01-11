@@ -1,4 +1,4 @@
-import github from "/icons/social/github.svg";
+import { github } from "../../../../../assets/imports";
 
 const Github = () => {
   return [
@@ -14,7 +14,11 @@ const Github = () => {
           href={"https://github.com/michalpawlowski-mp?tab=repositories"}
           target="_blank"
         >
-          <img className="me-3 invert" src={github} alt="Link do mojego profilu na CodePen" />
+          <img
+            className="me-3 invert"
+            src={github}
+            alt="Link do mojego profilu na CodePen"
+          />
           michalpawlowski-mp
         </a>
       </div>

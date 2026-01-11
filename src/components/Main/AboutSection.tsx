@@ -1,6 +1,6 @@
-import me from "/any/mypicture/me-a.svg";
+import me from "../../assets/images/mypicture/me-a.svg";
+import { arrow } from "../../assets/imports/iconsUI";
 import { Link } from "react-router-dom";
-import arrow from "/icons/any/arrow.svg";
 
 const AboutSection: React.FC = () => {
   return (

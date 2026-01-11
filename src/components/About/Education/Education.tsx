@@ -29,6 +29,7 @@ const Education: React.FC = () => {
               Zamknij
             </button>
             <div className="flex gap-4 flex-col md:flex-row">
+              <h2 className="text-3xl mb-2">Wykształcenie</h2>
               <ul className="ukw  p-4 bg-black/50 rounded-3xl shadow shadow-white">
                 <li className="text-xs">10.2020 – 03.2024 (3 lata 6 mies.)</li>
                 <li className="">

@@ -6,7 +6,8 @@
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ## 📌 Opis projektu
-Twój projekt to aplikacja stworzona w **Vite + React + TypeScript + Tailwind CSS**. Krótki opis funkcjonalności projektu.
+pawlowskimichal.pl to nowoczesna, responsywna strona typu portfolio / personal website, stworzona w oparciu o Vite, React, TypeScript oraz Tailwind CSS.
+Projekt prezentuje moje doświadczenie zawodowe, umiejętności techniczne oraz wybrane projekty, kładąc nacisk na wydajność, czytelny UI oraz dobrą strukturę kodu.
 
 ## 🌐 Demo
 🔗 [Zobacz na żywo](https://pawlowskimichal.pl/)

@@ -11,7 +11,12 @@ const Header: React.FC = () => {
       <Link to="/" className="items-center w-[270px]">
         <h1 className="text-2xl text-white uppercase"></h1>
       </Link>
-      <button ref={buttonRef} className="text-white z-30 text-4xl sm:hidden absolute right-2 top-2" onClick={toggleNav}>
+      <button
+        type="button"
+        ref={buttonRef}
+        className="text-white z-30 text-4xl sm:hidden absolute right-2 top-2"
+        onClick={toggleNav}
+      >
         {isNavOpen ? "\u00D7" : "\u2630"}
       </button>
       <div ref={navRef}>

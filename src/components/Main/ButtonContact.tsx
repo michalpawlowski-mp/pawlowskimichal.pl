@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import arrow from "/icons/any/arrow.svg";
+import { arrow } from "../../assets/imports";
 
 const ButtonContact: React.FC = () => {
   return (

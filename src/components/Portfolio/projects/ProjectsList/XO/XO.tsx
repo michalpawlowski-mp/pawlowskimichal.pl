@@ -1,14 +1,13 @@
-import { xo, html, css, ts } from "../../../../../assets/index";
-import LinkPanel from "../LinkPanel/LinkPanel";
-
+import { xo, html, css, ts } from "../../../../../assets/imports/index";
+import Links from "../../Link/Links";
 import { useToggle } from "../../../../../hook/useToggle";
-import XoPanel from "./xoPanel";
+import XoPanel from "./XoPanel";
 
 const XO: React.FC = () => {
   const { isVisible, toggleVisibility } = useToggle();
   return (
     <>
-      <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
+      <div className="md:w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-2 shadow-lg">
         <p className="text-2xl overflow-hidden w-full border-b-2 border-white p-2">
           Kółko i Krzyżyk
         </p>
@@ -18,13 +17,13 @@ const XO: React.FC = () => {
           <img src={css} alt="ikonka CSS" className="w-[20px] m-2" />
           <img src={ts} alt="ikonka Typescript" className="w-[20px] m-2" />
         </div>
-        <LinkPanel
+        <Links
           githubLink="https://github.com/michalpawlowski-mp/X-O"
           websiteLink="https://michalpawlowski-mp.github.io/X-O/"
           onInfoClick={toggleVisibility}
         />
-        {isVisible && <XoPanel toggleVisibility={toggleVisibility} />}
       </div>
+      {isVisible && <XoPanel toggleVisibility={toggleVisibility} />}
     </>
   );
 };

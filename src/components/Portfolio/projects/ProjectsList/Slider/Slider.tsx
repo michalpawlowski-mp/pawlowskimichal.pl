@@ -1,5 +1,5 @@
-import { slider, html, sass, js } from "../../../../../assets/index";
-import LinkPanel from "../LinkPanel/LinkPanel";
+import { slider, html, sass, js } from "../../../../../assets/imports/index";
+import Links from "../../Link/Links";
 import SliderPanel from "./SliderPanel";
 
 import { useToggle } from "../../../../../hook/useToggle";
@@ -8,7 +8,7 @@ const Slider: React.FC = () => {
   const { isVisible, toggleVisibility } = useToggle();
   return (
     <>
-      <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
+      <div className="md:w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-2 shadow-lg">
         <p className="text-2xl overflow-hidden w-full border-b-2 border-white p-2">
           Slider
         </p>
@@ -18,7 +18,7 @@ const Slider: React.FC = () => {
           <img src={sass} alt="ikonka SASS" className="w-[20px] m-2" />
           <img src={js} alt="ikonka JavaScript" className="w-[20px] m-2" />
         </div>
-        <LinkPanel
+        <Links
           githubLink="https://github.com/michalpawlowski-mp/Slider"
           websiteLink="https://michalpawlowski-mp.github.io/Slider/"
           onInfoClick={toggleVisibility}

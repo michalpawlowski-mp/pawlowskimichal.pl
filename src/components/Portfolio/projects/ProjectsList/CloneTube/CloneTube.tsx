@@ -1,14 +1,18 @@
-import { clonetube, react, tw, next } from "../../../../../assets/index";
-import LinkPanel from "../LinkPanel/LinkPanel";
+import {
+  clonetube,
+  react,
+  tw,
+  next,
+} from "../../../../../assets/imports/index";
+import Links from "../../Link/Links";
 import { useToggle } from "../../../../../hook/useToggle";
-
-import ProjectOnePanel from "./CloneTubePanel";
+import CloneTubePanel from "./CloneTubePanel";
 
 const CloneTube: React.FC = () => {
   const { isVisible, toggleVisibility } = useToggle();
   return (
     <>
-      <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
+      <div className="md:w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-2 shadow-lg">
         <p className="text-2xl overflow-hidden w-full border-b-2 border-white p-2">
           CloneTube
         </p>
@@ -22,12 +26,12 @@ const CloneTube: React.FC = () => {
             className="w-[20px] m-2 invert"
           />
         </div>
-        <LinkPanel
+        <Links
           githubLink="https://github.com/michalpawlowski-mp/CloneTube"
           websiteLink="https://clone-tube-ecru.vercel.app//"
           onInfoClick={toggleVisibility}
         />
-        {isVisible && <ProjectOnePanel toggleVisibility={toggleVisibility} />}
+        {isVisible && <CloneTubePanel toggleVisibility={toggleVisibility} />}
       </div>
     </>
   );

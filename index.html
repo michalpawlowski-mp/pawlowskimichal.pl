@@ -1,41 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon/MP.svg" />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MP.Dev | Michał Pawłowski – Frontend Developer</title>
     <meta
       name="description"
-      content="Portfolio Michała Pawłowskiego, Frontend Developera. Zobacz moje projekty, umiejętności i doświadczenie."
+      content="MP.Dev – portfolio Michała Pawłowskiego. Frontend Developer tworzący nowoczesne aplikacje w React, TypeScript, Next.js i Tailwind CSS."
     />
     <meta
       name="keywords"
-      content="Michał Pawłowski, portfolio, frontend developer, projekty, umiejętności, doświadczenie"
+      content="MP.Dev, Michał Pawłowski, frontend developer, portfolio, React, TypeScript, JavaScript, Next.js, Tailwind CSS"
     />
     <meta name="author" content="Michał Pawłowski" />
-    <meta property="og:title" content="Michał Pawłowski | MP.Dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MP.Dev | Frontend Developer" />
     <meta
       property="og:description"
-      content="Portfolio Michała Pawłowskiego, Frontend Developera. Zobacz moje projekty, umiejętności i doświadczenie."
+      content="MP.Dev – portfolio Frontend Developera. React, TypeScript, Next.js, Tailwind CSS."
     />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:url" content="https://michalpawlowski.pl" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/MP.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
     <link rel="preload" href="/background/bg.svg" as="image" />
-    <title>Michał Pawłowski | MP.Dev</title>
+    <meta name="theme-color" content="#020617" />
   </head>
-  <body
-    class="text-white w-screen h-screen bg-[url('/background/bg.svg')] bg-cover bg-center bg-fixed"
-  >
+  <body class="min-h-screen text-white bg-slate-800 scrollbar-none">
+    <noscript>Ta strona wymaga JavaScript do poprawnego działania.</noscript>
     <div
       id="root"
-      class="w-screen h-screen flex flex-col justify-between"
+      class="min-h-screen flex flex-col bg-[url('/background/bg.svg')] bg-cover bg-center bg-fixed"
     ></div>
-    <script type="module" src="./src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

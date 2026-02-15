@@ -1,5 +1,4 @@
-import codePen from "/icons/social/codepen.svg";
-import uiverseIo from "/icons/social/uiverse-io.svg";
+import { codepen, uiverse } from "../../../../../assets/imports";
 
 const Experiments = () => {
   return [
@@ -12,10 +11,10 @@ const Experiments = () => {
       <div className="w-full m-5 flex justify-center">
         <a
           className="bg-white/20 p-2 pe-4 m-4 rounded-3xl flex items-center"
-          href={"https://codepen.io/Michal-Pawlowski"}
+          href={"https://codepen.io/mpdev_"}
           target="_blank"
         >
-          <img className="me-3" src={codePen} alt="Link do mojego profilu na CodePen" />
+          <img className="me-3" src={codepen} alt="Link do mojego profilu na CodePen" />
           MP.Dev
         </a>
         <a
@@ -23,7 +22,11 @@ const Experiments = () => {
           href={"https://uiverse.io/profile/aJpaRmp"}
           target="_blank"
         >
-          <img className="rounded-full me-3" src={uiverseIo} alt="Link do mojego profilu na Uuverse.io" />
+          <img
+            className="rounded-full me-3"
+            src={uiverse}
+            alt="Link do mojego profilu na Uuverse.io"
+          />
           MP.Dev
         </a>
       </div>

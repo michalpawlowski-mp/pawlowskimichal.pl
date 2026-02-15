@@ -1,13 +1,17 @@
-import DeveloperTools from "./DeveloperTools/DeveloperTools";
-import Technology from "./Technology/Technology";
-import Programs from "./Programs/Programs";
+import { skills } from "./skills.data";
+import SkillGroup from "./SkillGroup";
 
 const Skills: React.FC = () => {
   return (
-    <article id="skills" className="w-full md:w-1/2 ">
-      <Technology />
-      <DeveloperTools />
-      <Programs />
+    <article id="skills" className="w-full md:w-3/4 mx-auto flex flex-col mr-1">
+      {skills.map((category) => (
+        <SkillGroup
+          key={category.title}
+          title={category.title}
+          items={category.items}
+          info={category.info}
+        />
+      ))}
     </article>
   );
 };

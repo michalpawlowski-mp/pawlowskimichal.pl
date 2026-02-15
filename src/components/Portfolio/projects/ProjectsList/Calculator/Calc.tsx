@@ -1,10 +1,13 @@
-import { html, cal, css, js } from "../../../../../assets/index";
-import LinkPanel from "../LinkPanel/LinkPanel";
+import { html, cal, css, js } from "../../../../../assets/imports/index";
+import LinkPanel from "../../Link/Links";
+import CalcPanel from "./CalcPanel";
 
+import { useToggle } from "../../../../../hook/useToggle";
 const Calc: React.FC = () => {
+  const { isVisible, toggleVisibility } = useToggle();
   return (
     <>
-      <div className="w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-5 shadow-lg">
+      <div className="md:w-[400px] bg-black/70 text-center flex flex-col items-center justify-center border-2 overflow-hidden border-white rounded-2xl m-2 shadow-lg">
         <p className="text-2xl overflow-hidden w-full border-b-2 border-white p-2">
           Calculator
         </p>
@@ -18,7 +21,9 @@ const Calc: React.FC = () => {
         <LinkPanel
           githubLink="https://github.com/michalpawlowski-mp/Calculator"
           websiteLink="https://michalpawlowski-mp.github.io/Calculator/"
+          onInfoClick={toggleVisibility}
         />
+        {isVisible && <CalcPanel toggleVisibility={toggleVisibility} />}
       </div>
     </>
   );

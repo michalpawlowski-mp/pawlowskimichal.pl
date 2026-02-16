@@ -11,9 +11,9 @@ export default function Hero() {
             Michał Pawłowski
           </h3>
           <h4 className="text-sm md:text-md font-bold text-white">MP.Dev_</h4>
-          {/* <h5 className="text-3xl md:text-6xl font-bold text-white">
-            Frontend Developer
-          </h5> */}
+          <h5 className="text-2xl md:text-6xl font-bold text-white">
+            Junior Frontend Developer
+          </h5>
         </div>
         <p className="text-lg md:text-xl text-gray-200 max-w-xl">
           Jestem Michał i rozwijam się w kierunku frontendu. Uczę się nowych

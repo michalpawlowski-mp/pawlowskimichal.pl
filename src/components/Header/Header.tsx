@@ -8,7 +8,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="flex flex-row items-center justify-between w-full p-3">
-      <Link to="/" className="items-center w-[270px]">
+      <Link to="/" className="items-center w-67.5">
         <h1 className="text-2xl text-white uppercase"></h1>
       </Link>
       <button

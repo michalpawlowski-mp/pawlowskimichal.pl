@@ -6,15 +6,11 @@ const SupportIT: React.FC = () => {
         <ul className="flex-1 my-2 p-4 bg-black/50 rounded-3xl shadow-lg shadow-white/30">
           <li className="text-xs">08.2022 – 09.2022 (2 mies.)</li>
           <li>Szpital Uniwersytecki nr 2 im. Jana Biziela w Bydgoszczy</li>
-          <li className="text-sm">
-            Dział Samodzielnej Sekcji Łączności (STAŻ)
-          </li>
+          <li className="text-sm">Dział Samodzielnej Sekcji Łączności (STAŻ)</li>
         </ul>
         <ul className="flex-1 my-2 p-4 bg-black/50 rounded-3xl shadow-lg shadow-white/30">
           <li className="text-xs">12.2021 – 08.2022 (9 mies.)</li>
-          <li>
-            Instytut Informatyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy
-          </li>
+          <li>Instytut Informatyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy</li>
           <li className="text-sm">Dział Techniczny</li>
         </ul>
         <ul className="flex-1 my-2 p-4 bg-black/50 rounded-3xl shadow-lg shadow-white/30">

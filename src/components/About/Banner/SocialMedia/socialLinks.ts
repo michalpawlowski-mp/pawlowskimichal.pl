@@ -19,22 +19,22 @@ export const socialLinks: SocialLink[] = [
   {
     href: "https://www.linkedin.com/in/michalpawlowski-mp/",
     icon: linkedin,
-    alt: "Link do mojego Linkedina",
+    alt: "Link do mojego profilu na Linked",
   },
   {
     href: "https://github.com/michalpawlowski-mp",
     icon: github,
-    alt: "Link do mojego Githuba",
+    alt: "Link do mojego profilu na Github",
   },
   {
     href: "https://www.instagram.com/mp.dev_/",
     icon: ig,
-    alt: "Link do mojego Instagrama",
+    alt: "Link do mojego profilu na Instagramie",
   },
   {
     href: "https://x.com/mp_dev_?s=21",
     icon: x,
-    alt: "Link do mojego profilu X",
+    alt: "Link do mojego profilu na X",
   },
   {
     href: "https://www.youtube.com/@MP-devJS",
@@ -44,16 +44,16 @@ export const socialLinks: SocialLink[] = [
   {
     href: "https://www.tiktok.com/@mp.dev_",
     icon: tiktok,
-    alt: "Link do mojego TikToka",
+    alt: "Link do mojego profilu na TikToka",
   },
   {
     href: "https://www.threads.net/@mp.dev_",
     icon: threads,
-    alt: "Link do mojego Threads",
+    alt: "Link do mojego profilu na Threads",
   },
   {
     href: "https://www.facebook.com/profile.php?id=61572716596188",
     icon: fb,
-    alt: "Link do mojej strony na Facebook",
+    alt: "Link do mojego profilu Facebook",
   },
 ];

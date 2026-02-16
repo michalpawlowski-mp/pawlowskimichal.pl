@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SupportIT from "./SupportIT/SupportIT";
-// import Developer from "./Developer/Developer";
+import Developer from "./Developer/Developer";
 
 const Carrier: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -26,6 +26,7 @@ const Carrier: React.FC = () => {
         <div className="fixed inset-0 bg-black/30 z-20 flex justify-center items-center backdrop-blur-sm">
           <div className="bg-white/10  shadow-inner shadow-black p-2 rounded-2xl m-1 max-w-3xl w-max max-h-5/6 overflow-auto ">
             <button
+              type="button"
               onClick={toggleVisibility}
               className="mb-4 p-2 bg-white/10 rounded-xl  text-white"
             >
@@ -33,7 +34,7 @@ const Carrier: React.FC = () => {
             </button>
             <div className="flex flex-col p-2">
               <SupportIT />
-              {/* <Developer /> */}
+              <Developer />
             </div>
           </div>
         </div>

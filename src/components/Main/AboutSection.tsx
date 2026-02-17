@@ -1,6 +1,5 @@
 import me from "../../assets/images/mypicture/me-a.svg";
-import { arrow } from "../../assets/imports/iconsUI";
-import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const AboutSection: React.FC = () => {
   return (
@@ -9,29 +8,16 @@ const AboutSection: React.FC = () => {
         <div className="flex">
           <div className="rounded-full overflow-hidden p-2 md:mr-10 m-2 w-[125px] h-[125px] relative shadow-lg shadow-gray-400">
             <div className="animate-spin duration-1000 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700  w-full h-full absolute top-0 left-0"></div>
-            <img
-              src={me}
-              alt="Moje zdjęcie w wrsji animowanej"
-              className="absolute"
-            />
+            <img src={me} alt="Moje zdjęcie w wrsji animowanej" className="absolute" />
           </div>
         </div>
         <div className="flex flex-col items-center">
           <p className="text-xl text-center mb-2">Więcej o mnie</p>
-          <p className="text-sm text-center ">
+          <p className="text-sm text-center pb-2">
             Przejdz do zakładki "O mnie" aby dowiedzieć się więcej
           </p>
-          <Link
-            to="/about"
-            className="inline-flex items-center gap-2 mt-2 rounded-2xl bg-slate-700 px-6 py-2 text-white font-medium shadow-lg transition-all duration-300 hover:bg-gray-800 hover:translate-x-1"
-          >
-            <span>Więcej o mnie</span>
-            <img
-              src={arrow}
-              alt="strzałka w prawo"
-              className="w-5 h-5 invert transition-transform duration-300 group-hover:translate-x-1"
-            />
-          </Link>
+
+          <Button link={"/about"} content="Więcej o mnie" />
         </div>
       </div>
     </>

@@ -7,35 +7,24 @@ type ButtonProps = {
   external?: boolean;
 };
 
-const Button: React.FC<ButtonProps> = ({ content, link, external = false }) => {
-  const baseClasses =
+const Button = ({ content, link, external = false }: ButtonProps) => {
+  const classes =
     "inline-flex mx-auto items-center gap-2 rounded-2xl bg-slate-700 px-6 py-2 text-white font-medium shadow-lg transition-all duration-300 hover:bg-gray-800 hover:translate-x-1";
 
-  if (external) {
-    return (
-      <a href={link} className={baseClasses} target="_blank" rel="noreferrer">
-        <span>{content}</span>
-        {icon && (
-          <img
-            src={icon}
-            alt="ikonka strzałki"
-            className="w-5 h-5 invert transition-transform duration-300"
-          />
-        )}
-      </a>
-    );
-  }
-
-  return (
-    <Link to={link} className={baseClasses}>
+  const ButtonContent = (
+    <>
       <span>{content}</span>
-      {icon && (
-        <img
-          src={icon}
-          alt="ikonka strzałki"
-          className="w-5 h-5 invert transition-transform duration-300"
-        />
-      )}
+      <img src={icon} alt="" aria-hidden="true" className="w-5 h-5 invert" />
+    </>
+  );
+
+  return external ? (
+    <a href={link} className={classes} target="_blank" rel="noreferrer">
+      {ButtonContent}
+    </a>
+  ) : (
+    <Link to={link} className={classes}>
+      {ButtonContent}
     </Link>
   );
 };

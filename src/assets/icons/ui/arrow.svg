@@ -1,9 +1,24 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32">
-	<title>iconmonstr-arrow-right-lined-48</title>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
 	<defs>
-		<image  width="36" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAAAXNSR0IB2cksfwAAAEJQTFRFAAAABQUFAQEBBAQEAgICAAAAAQEBBQUFBQUFAQEBBQUFBAQEAwMDAwMDAwMDAQEBAQEBBQUFAgICAgICBQUFAgICmaO8IAAAABZ0Uk5TACrlNHz/7zQo7TIyfoOz4+EmfrEwelXHoQoAAACfSURBVHicjdPdCsIwDAXgHulwrOD0Yu//gl6IoxPR/XSbbgk0R3NX+DgJaQuXKcChl+cc8gnh+QOVeKeoniNXjUrl0aqKyNGi/CFypJSJpLKRUATtiqFNUfRVKD1zeMyXhLqjWXMFnOMf6NKeWLt7ahf44GFIg4crRR9DV7AYdHSZmyFoNzYSxkTSWEgZA2ljfylh8qi5KWMkHd1LPo4JNqlHW0R3EG0AAAAASUVORK5CYII="/>
+		<image  width="18" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOBAMAAADQ9FGEAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA/////////v7+/v7+/////////v7+/f39/v7+/v7+////////////////ftXRYwAAAA90Uk5TAKPBDFL7w1QMo8Hr/6G/l4uZ6QAAAE9JREFUeJxjZAABIbkLDIxglqvcXCiL3f/WBQiLofTdXCgLKAhlMZR+ZpwlAGYxijPeg7D+PkaShenQgpnyeQbMZK0GqG3KM6C2XVrXwAAAQk8UH+c3SgAAAAAASUVORK5CYII="/>
+		<image  width="18" height="14" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOBAMAAADQ9FGEAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA/////////v7+/v7+/////////v7+/f39/v7+/v7+////////////////ftXRYwAAAA90Uk5TAKPBDFL7w1QMo8Hr/6G/l4uZ6QAAAE9JREFUeJxjZAABIbkLDIxglqvcXCiL3f/WBQiLofTdXCgLKAhlMZR+ZpwlAGYxijPeg7D+PkaShenQgpnyeQbMZK0GqG3KM6C2XVrXwAAAQk8UH+c3SgAAAAAASUVORK5CYII="/>
+		<image  width="18" height="14" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOBAMAAADQ9FGEAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA/////////v7+/v7+/////////v7+/f39/v7+/v7+////////////////ftXRYwAAAA90Uk5TAKPBDFL7w1QMo8Hr/6G/l4uZ6QAAAE9JREFUeJxjZAABIbkLDIxglqvcXCiL3f/WBQiLofTdXCgLKAhlMZR+ZpwlAGYxijPeg7D+PkaShenQgpnyeQbMZK0GqG3KM6C2XVrXwAAAQk8UH+c3SgAAAAAASUVORK5CYII="/>
+		<image  width="18" height="14" id="img4" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOBAMAAADQ9FGEAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA/////////v7+/v7+/////////v7+/f39/v7+/v7+////////////////ftXRYwAAAA90Uk5TAKPBDFL7w1QMo8Hr/6G/l4uZ6QAAAE9JREFUeJxjZAABIbkLDIxglqvcXCiL3f/WBQiLofTdXCgLKAhlMZR+ZpwlAGYxijPeg7D+PkaShenQgpnyeQbMZK0GqG3KM6C2XVrXwAAAQk8UH+c3SgAAAAAASUVORK5CYII="/>
+		<image  width="18" height="14" id="img5" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOBAMAAADQ9FGEAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA/////////v7+/v7+/////////v7+/f39/v7+/v7+////////////////ftXRYwAAAA90Uk5TAKPBDFL7w1QMo8Hr/6G/l4uZ6QAAAE9JREFUeJxjZAABIbkLDIxglqvcXCiL3f/WBQiLofTdXCgLKAhlMZR+ZpwlAGYxijPeg7D+PkaShenQgpnyeQbMZK0GqG3KM6C2XVrXwAAAQk8UH+c3SgAAAAAASUVORK5CYII="/>
+		<image  width="18" height="14" id="img6" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOBAMAAADQ9FGEAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA/////////v7+/v7+/////////v7+/f39/v7+/v7+////////////////ftXRYwAAAA90Uk5TAKPBDFL7w1QMo8Hr/6G/l4uZ6QAAAE9JREFUeJxjZAABIbkLDIxglqvcXCiL3f/WBQiLofTdXCgLKAhlMZR+ZpwlAGYxijPeg7D+PkaShenQgpnyeQbMZK0GqG3KM6C2XVrXwAAAQk8UH+c3SgAAAAAASUVORK5CYII="/>
+		<image  width="18" height="14" id="img7" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOBAMAAADQ9FGEAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA/////////v7+/v7+/////////v7+/f39/v7+/v7+////////////////ftXRYwAAAA90Uk5TAKPBDFL7w1QMo8Hr/6G/l4uZ6QAAAE9JREFUeJxjZAABIbkLDIxglqvcXCiL3f/WBQiLofTdXCgLKAhlMZR+ZpwlAGYxijPeg7D+PkaShenQgpnyeQbMZK0GqG3KM6C2XVrXwAAAQk8UH+c3SgAAAAAASUVORK5CYII="/>
+		<image  width="18" height="14" id="img8" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOBAMAAADQ9FGEAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA/////////v7+/v7+/////////v7+/f39/v7+/v7+////////////////ftXRYwAAAA90Uk5TAKPBDFL7w1QMo8Hr/6G/l4uZ6QAAAE9JREFUeJxjZAABIbkLDIxglqvcXCiL3f/WBQiLofTdXCgLKAhlMZR+ZpwlAGYxijPeg7D+PkaShenQgpnyeQbMZK0GqG3KM6C2XVrXwAAAQk8UH+c3SgAAAAAASUVORK5CYII="/>
+		<image  width="18" height="14" id="img9" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOBAMAAADQ9FGEAAAAAXNSR0IB2cksfwAAAC1QTFRFAAAA/////////v7+/v7+/////////v7+/f39/v7+/v7+////////////////ftXRYwAAAA90Uk5TAKPBDFL7w1QMo8Hr/6G/l4uZ6QAAAE9JREFUeJxjZAABIbkLDIxglqvcXCiL3f/WBQiLofTdXCgLKAhlMZR+ZpwlAGYxijPeg7D+PkaShenQgpnyeQbMZK0GqG3KM6C2XVrXwAAAQk8UH+c3SgAAAAAASUVORK5CYII="/>
 	</defs>
 	<style>
 	</style>
-	<use id="Background" href="#img1" x="6" y="10"/>
+	<use id="Background" href="#img1" x="3" y="5"/>
+	<use id="Layer 1" href="#img2" x="3" y="5"/>
+	<use id="Background copy" href="#img3" x="3" y="5"/>
+	<use id="Background copy 2" href="#img4" x="3" y="5"/>
+	<use id="Background copy 3" href="#img5" x="3" y="5"/>
+	<use id="Background copy 4" href="#img6" x="3" y="5"/>
+	<use id="Background copy 5" href="#img7" x="3" y="5"/>
+	<use id="Background copy 6" href="#img8" x="3" y="5"/>
+	<use id="Background copy 7" href="#img9" x="3" y="5"/>
 </svg>

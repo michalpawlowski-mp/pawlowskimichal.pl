@@ -1,7 +1,7 @@
 import { github } from "../../../../../assets/imports";
 
 const Github = () => {
-  return [
+  return (
     <>
       <div className="flex items-center justify-center w-full">
         <div className="w-1/3 md:w-2/5 h-px border-white bg-white rounded-full"></div>
@@ -22,8 +22,8 @@ const Github = () => {
           michalpawlowski-mp
         </a>
       </div>
-    </>,
-  ];
+    </>
+  );
 };
 
 export default Github;

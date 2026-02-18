@@ -24,7 +24,7 @@ const allProjects = [
 ];
 
 const ProjectsList: React.FC = () => {
-  const [visibleCount, setVisibleCount] = useState(4);
+  const [visibleCount, setVisibleCount] = useState(6);
 
   const handleShowMore = () => {
     setVisibleCount((prev) => Math.min(prev + 4, allProjects.length));
@@ -43,7 +43,6 @@ const ProjectsList: React.FC = () => {
           onClick={handleShowMore}
         >
           Zobacz więcej
-          <img src="/icons/any/arrow2.svg" alt="" className="-rotate-90 invert ms-1" />
         </button>
       )}
     </div>

@@ -1,7 +1,7 @@
 import ProjectOne from "./ProjectOne/projectOne";
 import ProjectTwo from "./ProjectTwo/projectTwo";
 import ProjectThree from "./ProjectThree/projectThree";
-import ButtonProject from "./ButtonProject";
+import Button from "../Button";
 
 const ExampleProjectSection: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const ExampleProjectSection: React.FC = () => {
           <ProjectTwo />
           <ProjectThree />
         </div>
-        <ButtonProject />
+        <Button link={"/Portfolio"} content="Zobacz wiecej moich projektów" />
       </div>
     </>
   );

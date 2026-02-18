@@ -9,12 +9,12 @@ type ButtonProps = {
 
 const Button = ({ content, link, external = false }: ButtonProps) => {
   const classes =
-    "inline-flex mx-auto items-center gap-2 rounded-2xl bg-slate-700 px-6 py-2 text-white font-medium shadow-lg transition-all duration-300 hover:bg-gray-800 hover:translate-x-1";
+    "flex rounded-2xl bg-slate-700 px-6 py-2 text-white font-medium shadow-lg transition-all duration-300 hover:bg-gray-800 hover:translate-x-1";
 
   const ButtonContent = (
     <>
       <span>{content}</span>
-      <img src={icon} alt="" aria-hidden="true" className="w-5 h-5 invert" />
+      <img src={icon} alt="" aria-hidden="true" className="ml-2" />
     </>
   );
 

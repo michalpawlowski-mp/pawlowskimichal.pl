@@ -24,7 +24,7 @@ const allProjects = [
 ];
 
 const ProjectsList: React.FC = () => {
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(4);
 
   const handleShowMore = () => {
     setVisibleCount((prev) => Math.min(prev + 4, allProjects.length));

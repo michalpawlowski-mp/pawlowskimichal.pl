@@ -1,11 +1,11 @@
-export interface CarrierData {
+export interface CarrierDataProps {
   date: string;
   company: string;
   position: string;
   description: string[];
 }
 
-export const supportData: CarrierData[] = [
+export const supportData: CarrierDataProps[] = [
   {
     date: "08/2022 – 09/2022 (2 mies.)",
     company: "Szpital Uniwersytecki nr 2 im. Jana Biziela w Bydgoszczy",

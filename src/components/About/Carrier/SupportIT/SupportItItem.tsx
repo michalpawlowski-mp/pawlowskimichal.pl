@@ -1,9 +1,11 @@
-const SupportItItem = ({ date, company, position, description }) => {
+import { CarrierDataProps } from "./support.data";
+
+const SupportItItem = ({ date, company, position, description }: CarrierDataProps) => {
   return (
-    <ul className="">
-      <li className="">{date}</li>
+    <ul className="p-4 mb-4 bg-black/20 rounded-3xl shadow shadow-white">
+      <li className="text-xs">{date}</li>
       <li className="">{company}</li>
-      <li className="">{position}</li>
+      <li className="text-xs">{position}</li>
       <li className="">
         <ol className="p-0">
           {description.map((item, index) => (

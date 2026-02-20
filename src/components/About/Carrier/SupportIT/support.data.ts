@@ -1,9 +1,4 @@
-export interface CarrierDataProps {
-  date: string;
-  company: string;
-  position: string;
-  description: string[];
-}
+import { CarrierDataProps } from "../../../../types/CarrierDataProps";
 
 export const supportData: CarrierDataProps[] = [
   {

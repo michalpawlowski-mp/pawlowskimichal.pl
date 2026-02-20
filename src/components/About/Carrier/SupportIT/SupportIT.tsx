@@ -1,4 +1,4 @@
-import SupportItItem from "./SupportItItem";
+import CarrierItem from "../CarrierItem";
 import { supportData } from "./support.data";
 
 const SupportIT: React.FC = () => {
@@ -6,7 +6,7 @@ const SupportIT: React.FC = () => {
     <>
       <p className="pb-3 text-2xl font-semibold">Wsparcie IT</p>
       {supportData.map((item, index) => (
-        <SupportItItem key={index} {...item} />
+        <CarrierItem key={index} {...item} />
       ))}
     </>
   );

@@ -1,6 +1,6 @@
-import { CarrierDataProps } from "./support.data";
+import { CarrierDataProps } from "../../../types/CarrierDataProps";
 
-const SupportItItem = ({ date, company, position, description }: CarrierDataProps) => {
+const CarrierItem = ({ date, company, position, description }: CarrierDataProps) => {
   return (
     <ul className="p-4 mb-4 bg-black/20 rounded-3xl shadow shadow-white">
       <li className="text-xs">{date}</li>
@@ -9,7 +9,7 @@ const SupportItItem = ({ date, company, position, description }: CarrierDataProp
       <li className="">
         <ol className="p-0">
           {description.map((item, index) => (
-            <li key={index} className="">
+            <li key={index} className="text-sm">
               - {item}
             </li>
           ))}
@@ -19,4 +19,4 @@ const SupportItItem = ({ date, company, position, description }: CarrierDataProp
   );
 };
 
-export default SupportItItem;
+export default CarrierItem;

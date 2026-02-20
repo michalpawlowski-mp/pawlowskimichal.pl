@@ -10,10 +10,7 @@ const Carrier: React.FC = () => {
   };
 
   return (
-    <article
-      id="carrier"
-      className="flex flex-col items-center bg-black/50 md:mx-2 mt-2 pt-2 rounded-3xl w-full md:w-1/2 "
-    >
+    <article className="flex flex-col items-center bg-black/50 md:mx-2 mt-2 pt-2 rounded-3xl w-full md:w-1/2 ">
       <h2 className="text-3xl mb-2">Kariera</h2>
       <button
         type="button"
@@ -23,8 +20,8 @@ const Carrier: React.FC = () => {
         Zobacz moją kariere
       </button>
       {isVisible && (
-        <div className="fixed inset-0 bg-black/30 z-20 flex justify-center items-center backdrop-blur-sm">
-          <div className="bg-white/10  shadow-inner shadow-black p-2 rounded-2xl m-1 max-w-3xl w-max max-h-5/6 overflow-auto ">
+        <div className="fixed inset-0 bg-black/30 z-20 p-10 flex justify-center items-center backdrop-blur-sm">
+          <div className="bg-white/10 scrollbar-none  shadow-inner shadow-black p-2 rounded-2xl m-1 max-w-3xl w-max h-full  overflow-auto ">
             <button
               type="button"
               onClick={toggleVisibility}
@@ -32,9 +29,9 @@ const Carrier: React.FC = () => {
             >
               Zamknij
             </button>
-            <div className="flex flex-col p-2">
-              <SupportIT />
+            <div className="flex flex-col p-2 ">
               <Developer />
+              <SupportIT />
             </div>
           </div>
         </div>

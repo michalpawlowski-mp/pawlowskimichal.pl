@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import icon from "../../assets/icons/ui/arrow.svg";
 
-type ButtonProps = {
+type ButtonLinkProps = {
   content: string;
   link: string;
   external?: boolean;
 };
 
-const Button = ({ content, link, external = false }: ButtonProps) => {
+const ButtonLink = ({ content, link, external = false }: ButtonLinkProps) => {
   const classes =
     "flex rounded-2xl bg-slate-700 px-6 py-2 text-white font-medium shadow-lg transition-all duration-300 hover:bg-gray-800 hover:translate-x-1";
 
@@ -29,4 +29,4 @@ const Button = ({ content, link, external = false }: ButtonProps) => {
   );
 };
 
-export default Button;
+export default ButtonLink;

@@ -1,5 +1,5 @@
 import me from "../../assets/images/mypicture/me.svg";
-import Button from "./Button";
+import Button from "./ButtonLink";
 
 const Hero: React.FC = () => {
   return (
@@ -27,13 +27,7 @@ const Hero: React.FC = () => {
           />
         </div>
       </div>
-      <img
-        src={me}
-        alt="Michał Pawłowski"
-        width={400}
-        height={400}
-        className="rounded-3xl shadow-lg m-3"
-      />
+      <img src={me} alt="Michał Pawłowski" className="rounded-3xl shadow-lg m-3" />
     </section>
   );
 };

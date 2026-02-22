@@ -1,7 +1,7 @@
 import ProjectOne from "./ProjectOne/projectOne";
 import ProjectTwo from "./ProjectTwo/projectTwo";
 import ProjectThree from "./ProjectThree/projectThree";
-import Button from "../Button";
+import Button from "../ButtonLink";
 
 const ExampleProjectSection: React.FC = () => {
   return (

@@ -30,13 +30,13 @@ const Contact: React.FC = () => {
             >
               {item.text}
             </a>
-            <img
+            <button
+              type="button"
               onClick={() => copyToClipboard(item.text)}
-              src={copy}
-              alt={item.alt}
-              loading="lazy"
               className="py-2 px-3 border-l border-white/10 cursor-pointer hover:bg-[#252836] transition-colors"
-            />
+            >
+              <img src={copy} alt={item.alt} loading="lazy" />
+            </button>
           </div>
         ))}
       </div>

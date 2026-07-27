@@ -28,7 +28,7 @@ export const skills: SkillCategory[] = [
   },
   {
     title: "Wsparcie AI w programowaniu",
-    items: ["Cloude", "GitHub Copilot", "ChatGPT", "Gemini"],
+    items: ["Claude", "GitHub Copilot", "ChatGPT", "Gemini"],
     info: "debugowanie, refaktoryzacja, nauka",
   },
   {

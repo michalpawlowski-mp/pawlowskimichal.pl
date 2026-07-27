@@ -25,12 +25,13 @@ const Links: React.FC<LinksProps> = ({ githubLink, websiteLink, onInfoClick }) =
       >
         <img src={web} alt="link do strony projektu (live demo)" loading="lazy" />
       </a>
-      <div
+      <button
+        type="button"
         onClick={onInfoClick}
         className="hover:bg-[#252836] w-1/3 border-l border-white/8 p-3 flex items-center justify-center cursor-pointer transition-colors"
       >
         <img src={info} alt="Więcej info o projekcie" loading="lazy" />
-      </div>
+      </button>
     </div>
   );
 };

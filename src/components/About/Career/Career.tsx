@@ -3,10 +3,13 @@ import CareerSection from "./CareerSection";
 import { developerData } from "./Developer/developer.data";
 import { supportData } from "./SupportIT/support.data";
 import ToggleButton from "../../UI/ToggleButton/ToggleButton";
+import { useBodyScrollLock } from "../../../hooks/useBodyScrollLock";
 
 const Carrier: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const toggleVisibility = () => setIsVisible((prev) => !prev);
+
+  useBodyScrollLock(isVisible);
 
   return (
     <article className="flex flex-col items-center bg-[#1a1d27]/50 border border-white/8 rounded-xl p-5 w-full md:w-1/2 gap-3 mt-2">

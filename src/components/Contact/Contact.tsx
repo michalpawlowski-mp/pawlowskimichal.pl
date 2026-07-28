@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
         ))}
       </div>
       {notification && (
-        <div className="fixed bottom-8 bg-[#1a1d27] border border-white/10 text-slate-300 text-sm py-2 px-5 rounded-lg shadow-lg">
+        <div className="fixed bottom-15 bg-[#1a1d27] border border-white/10 text-slate-300 text-sm py-2 px-5 rounded-lg shadow-lg">
           {notification}
         </div>
       )}

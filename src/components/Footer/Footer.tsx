@@ -1,7 +1,7 @@
 const Footer: React.FC = () => {
   return (
     <footer className="text-center p-4 text-slate-500 text-sm border-t border-white/5">
-      © Inż. Michał Pawłowski
+      © {new Date().getFullYear()} Inż. Michał Pawłowski
     </footer>
   );
 };

@@ -2,51 +2,92 @@ import * as img from "../assets/imports";
 import { ProjectsDataProps } from "../types/ProjectsProps";
 
 export const projectsData: ProjectsDataProps[] = [
+  //e-kantor
   {
-    id: "clonetube",
-    title: "CloneTube",
+    id: "e-kantor",
+    title: "e-Kantor",
     features: [
-      "Wyświetlanie filmów z API YouTube",
-      "Wyszukiwanie treści",
-      "Filtrowanie kategorii",
-      "Modalny odtwarzacz",
+      "Aktualne kursy walut pobierane z API NBP",
+      "Przelicznik walut w czasie rzeczywistym",
+      "Wybór waluty bazowej i docelowej",
     ],
     description: [
-      `CloneTube to aplikacja stworzona jako klon YouTube, umożliwiająca
-      przeglądanie filmów z różnych kategorii oraz wyszukiwanie treści za pomocą
-      API YouTube. Użytkownik może łatwo otwierać wybrane wideo w odtwarzaczu
-      oraz przełączać się pomiędzy interesującymi go kategoriami tematycznymi.`,
-      `Projekt został zaprojektowany z myślą o prostocie i intuicyjności. Dzięki
-      dynamicznemu filtrowaniu i wyszukiwaniu, użytkownik szybko znajdzie
-      interesujące materiały. Całość oparta jest o React i Next.js, a interfejs
-      został dostosowany do urządzeń mobilnych i desktopowych.`,
-      `CloneTube łączy w sobie podstawowe funkcje serwisu YouTube, zapewniając
-      przejrzysty układ, responsywność i prosty system nawigacji. Projekt
-      świetnie pokazuje wykorzystanie zewnętrznego API i obsługę dynamicznych
-      komponentów w nowoczesnej aplikacji webowej.`,
+      `e-Kantor to aplikacja do sprawdzania aktualnych kursów walut oraz
+      przeliczania kwot między walutami, korzystająca z oficjalnego API
+      Narodowego Banku Polskiego (NBP). Użytkownik może wybrać walutę bazową
+      i docelową, a przelicznik automatycznie aktualizuje wynik.`,
+      `Projekt został zbudowany w oparciu o Next.js 16 i React 19 z TypeScript,
+      a stylowanie oparte jest o czysty CSS3 (bez frameworków CSS). W trakcie
+      rozwoju aplikacja przeszła kilka iteracji refaktoryzacji hooków oraz
+      poprawek semantyki HTML.`,
     ],
-    miniDescription: `Moja aplikacja CloneTube wykorzystuje API YouTube do wyświetlania filmów wideo w
-    wybranej kategorii lub na podstawie wyszukiwanego hasła. Umożliwia użytkownikowi
-    przeglądanie listy filmów, otwieranie ich w odtwarzaczu oraz szybkie przełączanie się między różnymi kategoriami tematycznymi`,
-    images: [img.clonetube, img.clonetubeVW],
+    miniDescription: `Aplikacja do sprawdzania kursów walut i przeliczania kwot w czasie
+    rzeczywistym, oparta o oficjalne dane z API NBP.`,
+    images: [img.ekantor],
     technologies: [
       { name: "React", src: img.react },
       { name: "TypeScript", src: img.ts },
-      { name: "Tailwind", src: img.tailwind },
+      { name: "CSS3", src: img.css },
     ],
     devTools: [
       { name: "next.js", src: img.next },
       { name: "vercel", src: img.vercel },
       { name: "npm", src: img.npm },
       { name: "node.js", src: img.node },
-      { name: "API", src: img.yt },
+      { name: "API", src: img.API },
     ],
     links: {
-      github: "https://github.com/michalpawlowski-mp/CloneTube",
-      website: "https://clone-tube-ecru.vercel.app/",
+      github: "https://github.com/michalpawlowski-mp/e-Kantor",
+      website: "https://e-kantor.vercel.app",
     },
     example: true,
   },
+  //food-explorer
+  {
+    id: "food-explorer",
+    title: "FoodExplorer",
+    features: [
+      "Przeglądanie przepisów po kategoriach",
+      "Wyszukiwanie przepisów po nazwie",
+      "Panel szczegółów przepisu (składniki i instrukcje) w widoku split-view",
+      "Ulubione przepisy zapisywane w localStorage",
+      "Tryb ciemny z wykrywaniem preferencji systemowych",
+      "Obsługa pustego stanu (brak wyników)",
+    ],
+    description: [
+      `FoodExplorer to aplikacja do przeglądania i wyszukiwania przepisów
+      kulinarnych, korzystająca z publicznego API TheMealDB. Użytkownik może
+      przeglądać przepisy po kategoriach lub wyszukać konkretne danie, a
+      szczegóły przepisu wyświetlają się w dedykowanym panelu obok listy.`,
+      `Projekt zbudowany w Vite + React + TypeScript, ze stylowaniem opartym
+      o Tailwind CSS w wersji 4 — najnowszy dostępny stack narzędziowy.
+      Zamiast React Routera, nawigacja między widokami (lista / szczegóły)
+      oparta jest o warunkowe renderowanie stanu.`,
+      `Aplikacja pozwala zapisywać ulubione przepisy w localStorage, wspiera
+      tryb ciemny z automatycznym wykrywaniem preferencji systemowych oraz
+      obsługuje pusty stan, gdy wyszukiwanie nie zwróci żadnych wyników.`,
+    ],
+    miniDescription: `Aplikacja do przeglądania i wyszukiwania przepisów kulinarnych, z
+    podglądem szczegółów dania w panelu obok listy.`,
+    images: [img.foodExplorer],
+    technologies: [
+      { name: "React", src: img.react },
+      { name: "TypeScript", src: img.ts },
+      { name: "Tailwind", src: img.tailwind },
+    ],
+    devTools: [
+      { name: "Vite", src: img.vite },
+      { name: "vercel", src: img.vercel },
+      { name: "npm", src: img.npm },
+      { name: "API", src: img.API },
+    ],
+    links: {
+      github: "https://github.com/michalpawlowski-mp/food-explorer",
+      website: "https://food-explorer-theta.vercel.app",
+    },
+    example: true,
+  },
+  //ShoesShop
   {
     id: "ShoesShop",
     title: "ShoesShop",
@@ -102,47 +143,54 @@ export const projectsData: ProjectsDataProps[] = [
       github: "https://github.com/michalpawlowski-mp/ShoesShop",
       website: "https://michalpawlowski-mp.github.io/ShoesShop/",
     },
+    example: true,
   },
+  //Clonetube
   {
-    id: "GamingHub",
-    title: "GamingHub",
+    id: "clonetube",
+    title: "CloneTube",
     features: [
-      "Sortowanie i filtrowanie treści według kategorii (gry, aktualności, poradniki itp.)",
-      "Możliwość zapisania ulubionych elementów (np. linków do gier)",
-      "Rotacja trójkąta wskazująca aktywną opcję sortowania",
-      "Obsługa wyszukiwania treści",
-      "Dynamiczna nawigacja między różnymi sekcjami strony",
-      "Lista linków do stron oferujących gry, recenzje i promocje",
-      "Dostęp do informacji o nowościach i promocjach w sklepach gier",
+      "Wyświetlanie filmów z API YouTube",
+      "Wyszukiwanie treści",
+      "Filtrowanie kategorii",
+      "Modalny odtwarzacz",
     ],
     description: [
-      `Platforma umożliwia użytkownikom przeglądanie różnych kategorii treści,
-      takich jak gry, aktualności i poradniki. Każdy użytkownik może filtrować,
-      sortować i przeszukiwać te treści w prosty sposób. Użytkownicy mogą również
-      zapisywać ulubione linki do stron z grami lub sklepów, co ułatwia szybki
-      dostęp do interesujących ofert.`,
-      `  Dodatkowo, kod JavaScript umożliwia dynamiczną zmianę aktywnych opcji,
-      takich jak sortowanie czy zmiana statusu "ulubione". Strona wykorzystuje
-      również style CSS, aby była responsywna i dostosowana do wyświetlania na
-      różnych urządzeniach (mobilnych, desktopowych).`,
-      `Strona została zaprojektowana w sposób prosty i intuicyjny, dostarczając
-      użytkownikom przyjemne doświadczenie przeglądania. Dzięki dynamicznym
-      interakcjom, użytkownicy mogą szybko znaleźć interesujące ich treści i łatwo
-      przechodzić między kategoriami. Projekt ma na celu stworzenie centralnego
-      źródła informacji, które będzie pełnić rolę bazy zasobów i linków dla
-      każdego pasjonata gier.`,
+      `CloneTube to aplikacja stworzona jako klon YouTube, umożliwiająca
+      przeglądanie filmów z różnych kategorii oraz wyszukiwanie treści za pomocą
+      API YouTube. Użytkownik może łatwo otwierać wybrane wideo w odtwarzaczu
+      oraz przełączać się pomiędzy interesującymi go kategoriami tematycznymi.`,
+      `Projekt został zaprojektowany z myślą o prostocie i intuicyjności. Dzięki
+      dynamicznemu filtrowaniu i wyszukiwaniu, użytkownik szybko znajdzie
+      interesujące materiały. Całość oparta jest o React i Next.js, a interfejs
+      został dostosowany do urządzeń mobilnych i desktopowych.`,
+      `CloneTube łączy w sobie podstawowe funkcje serwisu YouTube, zapewniając
+      przejrzysty układ, responsywność i prosty system nawigacji. Projekt
+      świetnie pokazuje wykorzystanie zewnętrznego API i obsługę dynamicznych
+      komponentów w nowoczesnej aplikacji webowej.`,
     ],
-    images: [img.gaminghub, img.gaminghubart, img.gaminghubshop],
+    miniDescription: `Moja aplikacja CloneTube wykorzystuje API YouTube do wyświetlania filmów wideo w
+    wybranej kategorii lub na podstawie wyszukiwanego hasła. Umożliwia użytkownikowi
+    przeglądanie listy filmów, otwieranie ich w odtwarzaczu oraz szybkie przełączanie się między różnymi kategoriami tematycznymi`,
+    images: [img.clonetube, img.clonetubeVW],
     technologies: [
-      { name: "HTML", src: img.html },
-      { name: "CSS", src: img.css },
-      { name: "JavaScript", src: img.js },
+      { name: "React", src: img.react },
+      { name: "TypeScript", src: img.ts },
+      { name: "Tailwind", src: img.tailwind },
+    ],
+    devTools: [
+      { name: "next.js", src: img.next },
+      { name: "vercel", src: img.vercel },
+      { name: "npm", src: img.npm },
+      { name: "node.js", src: img.node },
+      { name: "API", src: img.yt },
     ],
     links: {
-      github: "https://github.com/michalpawlowski-mp/GamingHub",
-      website: "https://michalpawlowski-mp.github.io/GamingHub/",
+      github: "https://github.com/michalpawlowski-mp/CloneTube",
+      website: "https://clone-tube-ecru.vercel.app/",
     },
   },
+  //WeatherApp
   {
     id: "WeatherApp",
     title: "Aplikacja Pogodowa",
@@ -185,177 +233,87 @@ export const projectsData: ProjectsDataProps[] = [
       github: "https://github.com/michalpawlowski-mp/WeatherApp",
       website: "https://weather-app-red-delta-87.vercel.app/",
     },
-    example: true,
   },
+  //keyboard-test
   {
-    id: "Notatnik",
-    title: "Notatnik",
+    id: "keyboard-test",
+    title: "Keyboard & Mouse Tester",
     features: [
-      "Dodawanie nowych notatek”",
-      "Edycja istniejących notatek",
-      "Usuwanie notatek",
-      "Zapisywanie notatek w LocalStorage",
-      "Widok siatki notatek z kartami",
-      "Zmiana motywu jasny/ciemny",
-      "Responsywny design dla różnych ekranów",
+      "Pełnowymiarowa wizualna klawiatura (104 klawisze, układ ANSI z numpadem)",
+      "Podświetlanie klawisza w momencie fizycznego wciśnięcia (keydown/keyup)",
+      "Test przycisków myszy: lewy, prawy, scroll",
+      "Rozpoznawanie klawiszy po event.code, niezależnie od układu klawiatury",
+      "Wskaźniki Num Lock / Caps Lock / Scroll Lock na żywo",
+      "Blokada domyślnych akcji przeglądarki (F3, F5, Tab) w trakcie testu",
+      "Personalizacja koloru podświetlenia klawiszy",
     ],
     description: [
-      `Notatnik pozwala użytkownikom na tworzenie, edycję i usuwanie notatek. Każda
-      notatka zapisuje się w LocalStorage, więc pozostaje nawet po zamknięciu
-      przeglądarki.`,
-      `Użytkownik może przeglądać notatki w formie kart w siatce, które pokazują
-      tytuł, treść i datę utworzenia. Panel posiada również możliwość zmiany
-      motywu pomiędzy jasnym a ciemnym, co zapewnia komfort pracy.`,
-      `Projekt jest prosty i intuicyjny, z responsywnym designem, aby działał
-      dobrze zarówno na desktopie, jak i urządzeniach mobilnych. Celem projektu
-      jest szybkie i wygodne zarządzanie własnymi notatkami.`,
+      `Wizualny tester klawiatury i myszy napisany w czystym JavaScript, bez
+      żadnego frameworka. Kliknięcie fizycznego klawisza lub przycisku myszy
+      podświetla odpowiadający mu element na ekranie w czasie rzeczywistym,
+      co pozwala łatwo sprawdzić, czy wszystkie klawisze działają poprawnie.`,
+      `Do rozpoznawania klawiszy użyto event.code zamiast event.key, dzięki
+      czemu klawiatura reaguje na fizyczne położenie klawisza, a nie na
+      wpisany znak — niezależnie od układu klawiatury czy stanu Shift/CapsLock.`,
+      `Projekt świadomie dokumentuje własne ograniczenia (np. klawisz Win czy
+      boczne przyciski myszy, które są przechwytywane przez system operacyjny
+      zanim JavaScript zdąży zareagować) zamiast je ukrywać.`,
     ],
-    images: [
-      img.notebook,
-      img.notebookWhite,
-      img.notebookEdit,
-      img.notebookNew,
-    ],
+    miniDescription: `Wizualny tester klawiatury i myszy — sprawdza w czasie rzeczywistym,
+    czy wszystkie klawisze i przyciski działają poprawnie.`,
+    images: [img.keyboardTest],
     technologies: [
-      { name: "HTML", src: img.html },
-      { name: "CSS", src: img.sass },
       { name: "JavaScript", src: img.js },
-    ],
-    links: {
-      github: "https://github.com/michalpawlowski-mp/Notebook",
-      website: "https://michalpawlowski-mp.github.io/Notebook/",
-    },
-  },
-  {
-    id: "calculator",
-    title: "Kalkulator",
-    features: [
-      "Podstawowe operacje (+, -, *, /)",
-      "Operacje specjalne (%, √, x²)",
-      "Przycisk cofania (`undo`)",
-      "Przycisk czyszczenia (`clear all`)",
-      "Obsługa liczb dziesiętnych i ujemnych",
-      "Zapisywanie stanu w localStorage",
-    ],
-    description: [
-      `Projekt przedstawia prosty **kalkulator** zbudowany w czystym JavaScript, HTML i SCSS.
-      Aplikacja pozwala na wykonywanie podstawowych i specjalnych operacji matematycznych.
-      Stan kalkulatora jest zapisywany w pamięci przeglądarki ("localStorage"),
-      dzięki czemu po odświeżeniu strony sesja zostaje przywrócona.`,
-      "Interfejs użytkownika jest responsywny i czytelny.",
-    ],
-    images: [img.cal],
-    technologies: [
       { name: "HTML", src: img.html },
       { name: "CSS", src: img.css },
-      { name: "JavaScript", src: img.js },
     ],
     devTools: [
-      { name: "npm", src: img.npm },
-      { name: "node.js", src: img.node },
-    ],
-    links: {
-      github: "https://github.com/michalpawlowski-mp/Calculator",
-      website: "https://michalpawlowski-mp.github.io/Calculator/",
-    },
-  },
-  {
-    id: "Slider",
-    title: "Slider",
-    features: [
-      "Przeglądanie zdjęć w trybie slidera",
-      "Nawigacja strzałkami (lewo / prawo)",
-      "Zmiana slajdu poprzez kliknięcie w kropki (nawigacja dolna)",
-      "Aktywny slajd podświetlany klasą .active",
-      "Obsługa pętli (ostatni → pierwszy)",
-    ],
-    description: [
-      `Projekt przedstawia prosty **slider zdjęć** zbudowany w czystym JavaScripcie,
-      HTML i SCSS. Użytkownik może zmieniać zdjęcia za pomocą strzałek lub
-      nawigacyjnych kropek. Struktura opiera się na prostych klasach CSS, a skrypt
-      obsługuje logikę zmiany aktywnego slajdu.`,
-      `Projekt jest responsywny i zoptymalizowany do działania w przeglądarce bez
-      dodatkowych bibliotek.`,
-    ],
-    images: [img.slider],
-    technologies: [
-      { name: "HTML", src: img.html },
-      { name: "SCSS", src: img.sass },
-      { name: "JavaScript", src: img.js },
-    ],
-    devTools: [
-      { name: "node.js", src: img.node },
+      { name: "Vite", src: img.vite },
+      { name: "Vercel", src: img.vercel },
       { name: "npm", src: img.npm },
     ],
     links: {
-      github: "https://github.com/michalpawlowski-mp/Slider",
-      website: "https://michalpawlowski-mp.github.io/Slider/",
+      github: "https://github.com/michalpawlowski-mp/keyboard-test",
+      website: "https://keyboard-test-mpdev.vercel.app/",
     },
   },
+  //ford-soltysiak
   {
-    id: "ToDoList",
-    title: "To-Do List",
+    id: "ford-soltysiak",
+    title: "FordSołtysiak",
     features: [
-      "Dodawanie nowych zadań",
-      "Edytowanie istniejących zadań",
-      "Usuwanie zadań",
-      "Oznaczanie zadań jako ukończone",
-      "Zapisywanie stanu w localStorage",
+      "Hero z animowanym tłem i opiniami klientów",
+      "Sekcja usług — 8 kart z ofertą serwisu",
+      "Sekcja atutów firmy (dlaczego warto)",
+      "Dane kontaktowe, godziny otwarcia oraz mapa Google",
+      "Płynne animacje pojawiania się sekcji przy scrollowaniu (własny hook useFadeIn)",
+      "Pełna responsywność",
     ],
     description: [
-      `Projekt to interaktywna **lista zadań** zbudowana w czystym JavaScript, HTML i
-      CSS. Umożliwia użytkownikowi łatwe zarządzanie swoimi zadaniami poprzez
-      dodawanie, edytowanie, usuwanie oraz oznaczanie ich jako ukończone.`,
-      `Stan listy jest automatycznie zapisywany w pamięci przeglądarki
-      (localStorage), dzięki czemu zadania nie znikają po odświeżeniu strony.
-      Projekt jest prosty, responsywny i działa bez zewnętrznych bibliotek.`,
+      `Strona wizytówka zrealizowana na zlecenie realnego klienta biznesowego —
+      serwisu samochodowego FORD Sołtysiak z Bydgoszczy, specjalizującego się
+      w diagnostyce i naprawach samochodów marki Ford. Projekt komercyjny,
+      wykonany dla działającej firmy, a nie jako ćwiczenie własne.`,
+      `Aplikacja zbudowana w React + Vite, z ręcznie pisanym, podzielonym na
+      pliki CSS (bez frameworków CSS) oraz własnym hookiem useFadeIn do
+      animacji pojawiania się sekcji przy scrollowaniu, zamiast gotowej
+      biblioteki animacji.`,
     ],
-    images: [img.todo, img.todoedit],
+    miniDescription: `Strona wizytówka dla lokalnego serwisu samochodowego, zrealizowana na
+    zlecenie realnego klienta.`,
+    images: [img.fordSoltysiak],
     technologies: [
-      { name: "HTML", src: img.html },
-      { name: "CSS", src: img.css },
+      { name: "React", src: img.react },
       { name: "JavaScript", src: img.js },
-    ],
-    links: {
-      github: "https://github.com/michalpawlowski-mp/todo-list",
-      website: "https://michalpawlowski-mp.github.io/todo-list/",
-    },
-  },
-  {
-    id: "kolko-i-krzyzyk",
-    title: "Kółko i krzyżyk",
-    features: [
-      "Interaktywna plansza 3x3 do gry w „Kółko i Krzyżyk”",
-      "Dynamiczna zmiana gracza (X i O)",
-      "Weryfikacja wygranej oraz możliwość remisu",
-      "Komunikaty informujące o stanie gry (czyja kolej, kto wygrał)",
-      "Możliwość restartu gry jednym przyciskiem",
-    ],
-    description: [
-      `Gra rozpoczyna się od planszy 3x3, na której gracze na zmianę umieszczają
-    swoje symbole (X lub O). Po każdym ruchu aplikacja sprawdza, czy któryś z
-    graczy wygrał lub czy nastąpił remis. Po zakończeniu gry można uruchomić nową
-    rozgrywkę za pomocą przycisku „Restart”.`,
-      `Projekt został zaprojektowany z myślą o prostocie i wygodzie użytkowania,
-    oferując płynną animację oraz intuicyjne interakcje..`,
-    ],
-    miniDescription: `Mój mini projekt to klasyczna gra logiczna dla dwóch graczy. Pozwala na
-    interaktywną rozgrywkę w przeglądarce, z automatycznym wykrywaniem zwycięzcy i
-    możliwością restartu gry.`,
-    images: [img.xo, img.xor],
-    technologies: [
-      { name: "HTML", src: img.html },
-      { name: "SCSS", src: img.sass },
-      { name: "TypeScript", src: img.ts },
+      { name: "CSS3", src: img.css },
     ],
     devTools: [
-      { name: "node.js", src: img.node },
+      { name: "Vite", src: img.vite },
       { name: "npm", src: img.npm },
     ],
     links: {
-      github: "https://github.com/michalpawlowski-mp/X-O",
-      website: "https://michalpawlowski-mp.github.io/X-O/",
+      github: "https://github.com/michalpawlowski-mp/FordSoltysiak",
+      website: "https://fordsoltysiak.vercel.app",
     },
-    example: true,
   },
 ];

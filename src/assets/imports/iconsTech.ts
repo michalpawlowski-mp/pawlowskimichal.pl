@@ -14,7 +14,7 @@ import node from "../icons/tech/node.svg";
 import npm from "../icons/tech/npm.svg";
 import styled from "../icons/tech/styled-component.svg";
 import vercel from "../icons/tech/vercel.svg";
-import API from "../icons/web/OpenWeather.svg";
+import ApiOW from "../icons/web/OpenWeather.svg";
 
 export {
   html,
@@ -33,5 +33,5 @@ export {
   node,
   npm,
   vercel,
-  API,
+  ApiOW,
 };

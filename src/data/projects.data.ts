@@ -221,7 +221,7 @@ export const projectsData: ProjectsDataProps[] = [
       { name: "Bootstrap", src: img.bootstrap },
       { name: "sass", src: img.sass },
       { name: "JavaScript", src: img.js },
-      { name: "API", src: img.API },
+      { name: "API OpenWeather", src: img.ApiOW },
     ],
     devTools: [
       { name: "node.js", src: img.node },

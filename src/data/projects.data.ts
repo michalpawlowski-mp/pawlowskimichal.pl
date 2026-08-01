@@ -34,7 +34,7 @@ export const projectsData: ProjectsDataProps[] = [
       { name: "vercel", src: img.vercel },
       { name: "npm", src: img.npm },
       { name: "node.js", src: img.node },
-      { name: "API", src: img.API },
+      { name: "API NBP", src: img.api },
     ],
     links: {
       github: "https://github.com/michalpawlowski-mp/e-Kantor",
@@ -69,7 +69,7 @@ export const projectsData: ProjectsDataProps[] = [
     ],
     miniDescription: `Aplikacja do przeglądania i wyszukiwania przepisów kulinarnych, z
     podglądem szczegółów dania w panelu obok listy.`,
-    images: [img.foodExplorer],
+    images: [img.foodExMain],
     technologies: [
       { name: "React", src: img.react },
       { name: "TypeScript", src: img.ts },
@@ -79,11 +79,11 @@ export const projectsData: ProjectsDataProps[] = [
       { name: "Vite", src: img.vite },
       { name: "vercel", src: img.vercel },
       { name: "npm", src: img.npm },
-      { name: "API", src: img.API },
+      { name: "API", src: img.api },
     ],
     links: {
       github: "https://github.com/michalpawlowski-mp/food-explorer",
-      website: "https://food-explorer-theta.vercel.app",
+      website: "https://food-explorer-mpdev.vercel.app",
     },
     example: true,
   },
@@ -145,6 +145,45 @@ export const projectsData: ProjectsDataProps[] = [
     },
     example: true,
   },
+  //ford-soltysiak
+  {
+    id: "ford-soltysiak",
+    title: "FordSołtysiak",
+    features: [
+      "Hero z animowanym tłem i opiniami klientów",
+      "Sekcja usług — 8 kart z ofertą serwisu",
+      "Sekcja atutów firmy (dlaczego warto)",
+      "Dane kontaktowe, godziny otwarcia oraz mapa Google",
+      "Płynne animacje pojawiania się sekcji przy scrollowaniu (własny hook useFadeIn)",
+      "Pełna responsywność",
+    ],
+    description: [
+      `Strona wizytówka zrealizowana na zlecenie realnego klienta biznesowego —
+      serwisu samochodowego FORD Sołtysiak z Bydgoszczy, specjalizującego się
+      w diagnostyce i naprawach samochodów marki Ford. Projekt komercyjny,
+      wykonany dla działającej firmy, a nie jako ćwiczenie własne.`,
+      `Aplikacja zbudowana w React + Vite, z ręcznie pisanym, podzielonym na
+      pliki CSS (bez frameworków CSS) oraz własnym hookiem useFadeIn do
+      animacji pojawiania się sekcji przy scrollowaniu, zamiast gotowej
+      biblioteki animacji.`,
+    ],
+    miniDescription: `Strona wizytówka dla lokalnego serwisu samochodowego, zrealizowana na
+    zlecenie realnego klienta.`,
+    images: [img.fordMain, img.fordAdvantages, img.fordServices, img.fordContactLocation],
+    technologies: [
+      { name: "React", src: img.react },
+      { name: "JavaScript", src: img.js },
+      { name: "CSS3", src: img.css },
+    ],
+    devTools: [
+      { name: "Vite", src: img.vite },
+      { name: "npm", src: img.npm },
+    ],
+    links: {
+      github: "https://github.com/michalpawlowski-mp/FordSoltysiak",
+      website: "https://fordsoltysiak.vercel.app",
+    },
+  },
   //Clonetube
   {
     id: "clonetube",
@@ -158,7 +197,7 @@ export const projectsData: ProjectsDataProps[] = [
     description: [
       `CloneTube to aplikacja stworzona jako klon YouTube, umożliwiająca
       przeglądanie filmów z różnych kategorii oraz wyszukiwanie treści za pomocą
-      API YouTube. Użytkownik może łatwo otwierać wybrane wideo w odtwarzaczu
+      API YouTube v3. Użytkownik może łatwo otwierać wybrane wideo w odtwarzaczu
       oraz przełączać się pomiędzy interesującymi go kategoriami tematycznymi.`,
       `Projekt został zaprojektowany z myślą o prostocie i intuicyjności. Dzięki
       dynamicznemu filtrowaniu i wyszukiwaniu, użytkownik szybko znajdzie
@@ -169,7 +208,7 @@ export const projectsData: ProjectsDataProps[] = [
       świetnie pokazuje wykorzystanie zewnętrznego API i obsługę dynamicznych
       komponentów w nowoczesnej aplikacji webowej.`,
     ],
-    miniDescription: `Moja aplikacja CloneTube wykorzystuje API YouTube do wyświetlania filmów wideo w
+    miniDescription: `Moja aplikacja CloneTube wykorzystuje API YouTube v3 do wyświetlania filmów wideo w
     wybranej kategorii lub na podstawie wyszukiwanego hasła. Umożliwia użytkownikowi
     przeglądanie listy filmów, otwieranie ich w odtwarzaczu oraz szybkie przełączanie się między różnymi kategoriami tematycznymi`,
     images: [img.clonetube, img.clonetubeVW],
@@ -183,7 +222,7 @@ export const projectsData: ProjectsDataProps[] = [
       { name: "vercel", src: img.vercel },
       { name: "npm", src: img.npm },
       { name: "node.js", src: img.node },
-      { name: "API", src: img.yt },
+      { name: "API YT v3", src: img.yt },
     ],
     links: {
       github: "https://github.com/michalpawlowski-mp/CloneTube",
@@ -221,7 +260,7 @@ export const projectsData: ProjectsDataProps[] = [
       { name: "Bootstrap", src: img.bootstrap },
       { name: "sass", src: img.sass },
       { name: "JavaScript", src: img.js },
-      { name: "API OpenWeather", src: img.ApiOW },
+      { name: "API OpenWeather", src: img.api },
     ],
     devTools: [
       { name: "node.js", src: img.node },
@@ -275,45 +314,6 @@ export const projectsData: ProjectsDataProps[] = [
     links: {
       github: "https://github.com/michalpawlowski-mp/keyboard-test",
       website: "https://keyboard-test-mpdev.vercel.app/",
-    },
-  },
-  //ford-soltysiak
-  {
-    id: "ford-soltysiak",
-    title: "FordSołtysiak",
-    features: [
-      "Hero z animowanym tłem i opiniami klientów",
-      "Sekcja usług — 8 kart z ofertą serwisu",
-      "Sekcja atutów firmy (dlaczego warto)",
-      "Dane kontaktowe, godziny otwarcia oraz mapa Google",
-      "Płynne animacje pojawiania się sekcji przy scrollowaniu (własny hook useFadeIn)",
-      "Pełna responsywność",
-    ],
-    description: [
-      `Strona wizytówka zrealizowana na zlecenie realnego klienta biznesowego —
-      serwisu samochodowego FORD Sołtysiak z Bydgoszczy, specjalizującego się
-      w diagnostyce i naprawach samochodów marki Ford. Projekt komercyjny,
-      wykonany dla działającej firmy, a nie jako ćwiczenie własne.`,
-      `Aplikacja zbudowana w React + Vite, z ręcznie pisanym, podzielonym na
-      pliki CSS (bez frameworków CSS) oraz własnym hookiem useFadeIn do
-      animacji pojawiania się sekcji przy scrollowaniu, zamiast gotowej
-      biblioteki animacji.`,
-    ],
-    miniDescription: `Strona wizytówka dla lokalnego serwisu samochodowego, zrealizowana na
-    zlecenie realnego klienta.`,
-    images: [img.fordSoltysiak],
-    technologies: [
-      { name: "React", src: img.react },
-      { name: "JavaScript", src: img.js },
-      { name: "CSS3", src: img.css },
-    ],
-    devTools: [
-      { name: "Vite", src: img.vite },
-      { name: "npm", src: img.npm },
-    ],
-    links: {
-      github: "https://github.com/michalpawlowski-mp/FordSoltysiak",
-      website: "https://fordsoltysiak.vercel.app",
     },
   },
 ];

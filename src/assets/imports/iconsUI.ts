@@ -6,5 +6,6 @@ import info from "../icons/ui/info.svg";
 import mail from "../icons/ui/mail.svg";
 import phone from "../icons/ui/phone.svg";
 import web from "../icons/ui/web.svg";
+import api from "../icons/ui/api.svg";
 
-export { arrow, chevron, copy, download, info, mail, phone, web };
+export { arrow, chevron, copy, download, info, mail, phone, web, api };

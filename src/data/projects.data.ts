@@ -69,7 +69,13 @@ export const projectsData: ProjectsDataProps[] = [
     ],
     miniDescription: `Aplikacja do przeglądania i wyszukiwania przepisów kulinarnych, z
     podglądem szczegółów dania w panelu obok listy.`,
-    images: [img.foodExMain],
+    images: [
+      img.foodExMain,
+      img.foodExFood,
+      img.foodExEmpty,
+      img.foodExFoodWhite,
+      img.foodExMainWhite,
+    ],
     technologies: [
       { name: "React", src: img.react },
       { name: "TypeScript", src: img.ts },
@@ -122,6 +128,9 @@ export const projectsData: ProjectsDataProps[] = [
       dopiero po wybraniu rozmiaru, co zapobiega błędom użytkownika. Projekt
       został wykonany z naciskiem na czytelny UX i responsywność interfejsu.`,
     ],
+    miniDescription: `Sklep internetowy z obuwiem sportowym (Nike, Adidas, New Balance) z
+                      filtrowaniem produktów, koszykiem zakupowym i zapisem stanu koszyka w
+                      LocalStorage.`,
     images: [
       img.shoesShop,
       img.shooesShopNoResult,
@@ -300,7 +309,7 @@ export const projectsData: ProjectsDataProps[] = [
     ],
     miniDescription: `Wizualny tester klawiatury i myszy — sprawdza w czasie rzeczywistym,
     czy wszystkie klawisze i przyciski działają poprawnie.`,
-    images: [img.keyboardTest],
+    images: [img.keyboardTest, img.keyboardTestKey, img.keyboardTestRgb],
     technologies: [
       { name: "JavaScript", src: img.js },
       { name: "HTML", src: img.html },

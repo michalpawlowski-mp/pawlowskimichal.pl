@@ -1,8 +1,10 @@
+import { useRef } from "react";
 import { ProjectsDataProps } from "../../../types/ProjectsProps";
 import Technologies from "./Technologies/Technologies";
 import LinksPanel from "./Link/LinksPanel";
 import ToggleButton from "../../UI/ToggleButton/ToggleButton";
 import { useBodyScrollLock } from "../../../hooks/useBodyScrollLock";
+import { chevron } from "../../../assets/imports";
 
 interface Props {
   project: ProjectsDataProps;
@@ -11,6 +13,15 @@ interface Props {
 
 const ProjectPanel: React.FC<Props> = ({ project, toggleVisibility }) => {
   useBodyScrollLock(true);
+  const galleryRef = useRef<HTMLDivElement>(null);
+  const hasMultipleImages = project.images.length > 1;
+
+  const scrollGallery = (direction: "left" | "right") => {
+    const el = galleryRef.current;
+    if (!el) return;
+    const amount = el.clientWidth * 0.85;
+    el.scrollBy({ left: direction === "left" ? -amount : amount, behavior: "smooth" });
+  };
 
   return (
     <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-40 backdrop-blur-sm p-4">
@@ -42,16 +53,42 @@ const ProjectPanel: React.FC<Props> = ({ project, toggleVisibility }) => {
           ))}
         </div>
 
-        <div className="flex overflow-x-auto snap-x snap-mandatory scroll-style">
-          {project.images.map((img, index) => (
-            <img
-              key={index}
-              src={img}
-              className="rounded-xl"
-              alt={`Project numer ${index + 1}`}
-              loading="lazy"
-            />
-          ))}
+        <div className="relative">
+          <div
+            ref={galleryRef}
+            className="flex overflow-x-auto snap-x snap-mandatory scroll-style gap-3"
+          >
+            {project.images.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                className="rounded-xl shrink-0 w-full snap-center object-cover"
+                alt={`Project numer ${index + 1}`}
+                loading="lazy"
+              />
+            ))}
+          </div>
+
+          {hasMultipleImages && (
+            <>
+              <button
+                type="button"
+                onClick={() => scrollGallery("left")}
+                aria-label="Poprzednie zdjęcie"
+                className="absolute left-1 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 rounded-full p-2 transition-colors"
+              >
+                <img src={chevron} alt="" className="w-4 h-4 invert" />
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollGallery("right")}
+                aria-label="Następne zdjęcie"
+                className="absolute right-1 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 rounded-full p-2 rotate-180 transition-colors"
+              >
+                <img src={chevron} alt="" className="w-4 h-4 invert" />
+              </button>
+            </>
+          )}
         </div>
 
         <Technologies
